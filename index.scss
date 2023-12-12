@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+}
+
+// Navigation bar
+
+.nav-item {
+    display: inline-block;
+    margin: 15px;
+    color: #08A6E4;
+}
+
+.nav-item h2 {
+    color: #08A6E4;
+    width: 206px;
+}
+
+.hamburguer-menu {
+    width: 20px;
+}
+
+.hamburguer-menu button {
+    color: #08A6E4;
+    background-color: transparent;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.nav-links {
+    display: none;
+    background-color: #333;
+    color: white;
+}
+
+.nav-links a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: #111;
+}
+
+//Sell section
+
+.sell {
+    display: block;
+    margin: 10px;
+    padding: 20px;
+
+    h1,
+    p {
+        text-align: center;
+        margin: 16px;
+        font-weight: 400;
+    }
+
+    h1 {
+        font-family: Raleway;
+        font-size: 35px;
+        line-height: 1.174;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    button {
+        background-color: #08A6E4;
+        color: white;
+        border-radius: 40px;
+        min-width: 310px;
+        min-height: 67px;
+        font-size: 16px;
+        line-height: 1.375;
+        font-weight: 700;
+        border: none;
+    }
+}
+
+//Info section
+
+.info {
+
+    display: block;
+    margin: 10px;
+    padding: 20px;
+
+    h2 {
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.16;
+    }
+
+    li {
+        list-style: none;
+
+        h4 {
+            font-size: 20px;
+            line-height: 1.2;
+            font-weight: 800;
+            letter-spacing: 5.96px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.176;
+            color: #A5A5A5;
+            text-align: center;
+        }
+    }
+}
+
+//Description section
+
+.description {
+    background-color: #F7F7F7;
+    padding: 10px;
+
+    li {
+        list-style: none;
+        padding: 20px;
+        background-color: white;
+        margin: 10px;
+
+        h3 {
+            text-align: left;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 1.174;
+        }
+
+        p {
+            text-align: left;
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+}
+
+//Pricing section
+
+.pricing {
+
+    text-align: center;
+
+    h2 {}
+
+    li {
+
+        button {
+            text-align: center;
+            margin-top: -55px;
+        }
+    }
+
+
+    .price-item {
+        display: block;
+        margin: 20px;
+        min-height: 251px;
+        // text-align: center;
+
+        li {
+            list-style: none;
+        }
+
+        .price-item-box {
+            margin: 0 auto;
+            min-height: 251px;
+
+            .price-item-box-left {
+                display: inline-block;
+                margin: 0 auto;
+                text-align: center;
+                // vertical-align: middle;
+                min-height: 251px;
+
+                p {
+                    vertical-align: middle;
+                }
+            }
+
+            ul {
+                display: inline-block;
+                margin: 0 auto;
+                // vertical-align: middle;
+                // width: 50%;
+                min-height: 251px;
+                text-align: left;
+            }
+        }
+
+
+
+    }
+
+    .red {
+        border: 1px solid #FB3B64;
+        border-radius: 10px;
+    }
+
+    .blue {
+        border: 1px solid #07ACE6;
+        border-radius: 10px;
+    }
+
+    .green {
+        border: 1px solid #55DFB4;
+        border-radius: 10px;
+    }
+}
