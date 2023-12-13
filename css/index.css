@@ -136,47 +136,489 @@ body {
 
 .pricing {
   text-align: center;
+  align-items: center;
+  padding-top: 50px;
 }
-.pricing li button {
-  text-align: center;
-  margin-top: -55px;
+.pricing h2 {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.174;
 }
-.pricing .price-item {
-  display: block;
-  margin: 20px;
-  min-height: 251px;
-}
-.pricing .price-item li {
-  list-style: none;
-}
-.pricing .price-item .price-item-box {
-  margin: 0 auto;
-  min-height: 251px;
-}
-.pricing .price-item .price-item-box .price-item-box-left {
+.pricing .prices {
   display: inline-block;
-  margin: 0 auto;
+  align-items: center;
   text-align: center;
-  min-height: 251px;
 }
-.pricing .price-item .price-item-box .price-item-box-left p {
-  vertical-align: middle;
+.pricing .prices .basic,
+.pricing .prices .professional,
+.pricing .prices .premium {
+  position: relative;
+  width: 293px;
+  height: 275px;
+  text-align: center;
+  font-size: 14px;
+  margin: 50px 10px;
+  cursor: pointer;
 }
-.pricing .price-item .price-item-box ul {
+.pricing .prices .basic .mb-hdd,
+.pricing .prices .professional .mb-hdd,
+.pricing .prices .premium .mb-hdd {
+  position: absolute;
+  top: 0;
+  left: 21px;
+}
+.pricing .prices .basic .checkbox-item,
+.pricing .prices .professional .checkbox-item,
+.pricing .prices .premium .checkbox-item {
+  width: 11px;
+  height: 11px;
+}
+.pricing .prices .basic .checkbox,
+.pricing .prices .professional .checkbox,
+.pricing .prices .premium .checkbox {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 11px;
+  height: 11px;
+}
+.pricing .prices .basic .cross-child,
+.pricing .prices .professional .cross-child,
+.pricing .prices .premium .cross-child {
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+  border: 1px solid #eb476e;
+  box-sizing: border-box;
+}
+.pricing .prices .basic .cross,
+.pricing .prices .basic .cross-child,
+.pricing .prices .basic .x,
+.pricing .prices .professional .cross,
+.pricing .prices .professional .cross-child,
+.pricing .prices .professional .x,
+.pricing .prices .premium .cross,
+.pricing .prices .premium .cross-child,
+.pricing .prices .premium .x {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+}
+.pricing .prices .basic .x,
+.pricing .prices .professional .x,
+.pricing .prices .premium .x {
+  top: calc(50% - 5.5px);
+  left: calc(50% - 5.5px);
+  line-height: 10px;
   display: inline-block;
-  margin: 0 auto;
-  min-height: 251px;
+}
+.pricing .prices .basic .cross,
+.pricing .prices .professional .cross,
+.pricing .prices .premium .cross {
+  top: 4px;
+  left: 0;
+  font-size: 9px;
+  color: #eb476e;
+  font-family: Raleway;
+}
+.pricing .prices .basic .begin,
+.pricing .prices .professional .begin,
+.pricing .prices .premium .begin {
+  top: 16px;
+  left: 57px;
+}
+.pricing .prices .basic .begin,
+.pricing .prices .basic .button1,
+.pricing .prices .professional .begin,
+.pricing .prices .professional .button1,
+.pricing .prices .premium .begin,
+.pricing .prices .premium .button1 {
+  position: absolute;
+}
+.pricing .prices .basic .button1,
+.pricing .prices .professional .button1,
+.pricing .prices .premium .button1 {
+  top: 225px;
+  left: 71.5px;
+  width: 150px;
+  height: 50px;
+  text-align: left;
+  font-size: 13px;
+  color: #fff;
+}
+.pricing .prices .basic .basic-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 18px;
+  background-color: #fff;
+  border: 1px solid #fb3b64;
+  box-sizing: border-box;
+  width: 293px;
+  height: 251px;
+}
+.pricing .prices .basic .basic1,
+.pricing .prices .basic .basic-div {
+  position: absolute;
+  text-align: left;
+  display: inline-block;
+}
+.pricing .prices .basic .basic1 {
+  top: 70px;
+  left: 50px;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: Raleway;
+  color: #13253b;
+  width: 52px;
+}
+.pricing .prices .basic .basic-div {
+  top: 95px;
+  left: 45px;
+  font-size: 46px;
+  line-height: 64px;
+  font-weight: 300;
+  color: #fb3b64;
+  width: 59px;
+}
+.pricing .prices .basic .basic-text-1,
+.pricing .prices .basic .basic-text-2,
+.pricing .prices .basic .basic-text-3 {
+  position: absolute;
+  top: 25px;
+  left: 142px;
+  width: 105px;
+  height: 19px;
+}
+.pricing .prices .basic .basic-text-2,
+.pricing .prices .basic .basic-text-3 {
+  top: 64px;
+  width: 108px;
+}
+.pricing .prices .basic .basic-text-3 {
+  top: 103px;
+  width: 80px;
+}
+.pricing .prices .basic .button-inner1,
+.pricing .prices .basic .basic-text-4,
+.pricing .prices .basic .basic-text-5 {
+  position: absolute;
+  top: 142px;
+  left: 142px;
+  width: 136px;
+  height: 19px;
+}
+.pricing .prices .basic .button-inner1,
+.pricing .prices .basic .basic-text-5 {
+  top: 181px;
+  width: 100px;
+}
+.pricing .prices .basic .button-inner1 {
+  top: 0;
+  left: 0;
+  border-radius: 23px;
+  background-color: #eb476e;
+  width: 150px;
+  height: 50px;
+}
+.pricing .prices .basic:hover {
+  transform: scale(1.1);
+}
+.pricing .prices .basic:hover .basic-child {
+  box-shadow: 5px 10px 27px rgba(235, 71, 109, 0.3215686275);
+}
+.pricing .prices .basic:hover .button-inner1 {
+  box-shadow: 5px 10px 14px rgba(235, 71, 109, 0.3215686275);
+}
+.pricing .prices .professional .professional-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 18px;
+  background-color: #fff;
+  border: 1px solid #07ace6;
+  box-sizing: border-box;
+  width: 293px;
+  height: 251px;
+}
+.pricing .prices .professional .professional1 {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: Raleway;
+  color: #13253b;
+  width: 52px;
+}
+.pricing .prices .professional .professional-div {
+  position: absolute;
+  display: inline-block;
+  top: 95px;
+  left: 30px;
+  font-size: 46px;
+  line-height: 64px;
+  font-weight: 300;
+  color: #07ace6;
+  width: 59px;
+}
+.pricing .prices .professional .limited-offer {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  font-size: 12px;
+  font-family: Raleway;
+  color: #13253b;
+}
+.pricing .prices .professional .pro-text-1 {
+  position: absolute;
+  top: 25px;
+  left: 142px;
+  width: 129px;
+  height: 19px;
+  text-align: center;
+}
+.pricing .prices .professional .pro-text-2 {
+  position: absolute;
+  top: 64px;
+  left: 142px;
+  width: 105px;
+  text-align: right;
+}
+.pricing .prices .professional .pro-text-3 {
+  position: absolute;
+  top: 103px;
+  left: 142px;
+  width: 115px;
+  text-align: center;
+}
+.pricing .prices .professional .pro-text-4 {
+  position: absolute;
+  top: 142px;
+  left: 142px;
+  width: 80px;
+  text-align: center;
+}
+.pricing .prices .professional .pro-text-5 {
+  position: absolute;
+  top: 181px;
+  left: 142px;
+  width: 100px;
+  text-align: center;
+}
+.pricing .prices .professional .button-inner2 {
+  position: absolute;
+  top: 0;
+  left: 0.5px;
+  border-radius: 23px;
+  background-color: #07ace6;
+  width: 150px;
+  height: 50px;
+}
+.pricing .prices .professional .begin1,
+.pricing .prices .professional .button2 {
+  position: absolute;
+  top: 16px;
+  left: 57px;
+}
+.pricing .prices .professional .button2 {
+  top: 225px;
+  left: 71.5px;
+  width: 150px;
+  height: 50px;
+  text-align: left;
+  font-size: 13px;
+  color: #fff;
+}
+.pricing .prices .professional:hover {
+  transform: scale(1.1);
+}
+.pricing .prices .professional:hover .professional-child {
+  box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+}
+.pricing .prices .professional:hover .button-inner2 {
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+}
+.pricing .prices .premium .premium-child {
+  position: relative;
+  border-radius: 18px;
+  background-color: #fff;
+  border: 1px solid #55dfb4;
+  box-sizing: border-box;
+  width: 293px;
+  height: 251px;
+}
+.pricing .prices .premium .premium1 {
+  top: 70px;
+  left: 31px;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: Raleway;
+  color: #13253b;
+}
+.pricing .prices .premium .premium-div,
+.pricing .prices .premium .limited-offer1,
+.pricing .prices .premium .premium1 {
+  position: absolute;
   text-align: left;
 }
-.pricing .red {
-  border: 1px solid #FB3B64;
-  border-radius: 10px;
+.pricing .prices .premium .premium-div {
+  top: 88.23px;
+  left: 35px;
+  font-size: 46px;
+  line-height: 62px;
+  font-weight: 300;
+  color: #55dfb4;
+  display: inline-block;
+  width: 79px;
 }
-.pricing .blue {
-  border: 1px solid #07ACE6;
-  border-radius: 10px;
+.pricing .prices .premium .limited-offer1 {
+  top: 145.23px;
+  left: 38px;
+  font-size: 12px;
+  font-family: Raleway;
+  color: #13253b;
 }
-.pricing .green {
-  border: 1px solid #55DFB4;
-  border-radius: 10px;
+.pricing .prices .premium .prem-text-1,
+.pricing .prices .premium .prem-text-2 {
+  position: absolute;
+  top: 25px;
+  left: 142px;
+  width: 87px;
+  height: 19px;
+}
+.pricing .prices .premium .prem-text-2 {
+  top: 64px;
+  width: 115px;
+}
+.pricing .prices .premium .button-inner3,
+.pricing .prices .premium .prem-text-3,
+.pricing .prices .premium .prem-text-4,
+.pricing .prices .premium .prem-text-5 {
+  position: absolute;
+  top: 103px;
+  left: 142px;
+  width: 88px;
+  height: 19px;
+}
+.pricing .prices .premium .button-inner3,
+.pricing .prices .premium .prem-text-4,
+.pricing .prices .premium .prem-text-5 {
+  top: 142px;
+  width: 136px;
+}
+.pricing .prices .premium .button-inner3,
+.pricing .prices .premium .prem-text-5 {
+  top: 181px;
+  width: 100px;
+}
+.pricing .prices .premium .button-inner3 {
+  top: 0;
+  left: 0;
+  border-radius: 23px;
+  background-color: #55dfb4;
+  width: 150px;
+  height: 50px;
+}
+.pricing .prices .premium:hover {
+  transform: scale(1.1);
+}
+.pricing .prices .premium:hover .premium-child {
+  box-shadow: 5px 10px 27px rgba(83, 218, 175, 0.308);
+}
+.pricing .prices .premium:hover .button-inner3 {
+  box-shadow: 5px 10px 14px rgba(83, 218, 175, 0.308);
+}
+
+.anyQuestions {
+  display: block;
+  margin: 20px;
+}
+.anyQuestions h2 {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.174;
+}
+.anyQuestions p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.anyQuestions .contact-list {
+  display: block;
+  margin-top: 40px;
+}
+.anyQuestions .contact-list .mail,
+.anyQuestions .contact-list .phone {
+  display: block;
+  margin: 10px 0;
+  min-height: 27px;
+}
+.anyQuestions .contact-list .mail-text,
+.anyQuestions .contact-list .phone-text {
+  font-family: "Open Sans", sans-serif;
+  color: #A5A5A5;
+  display: inline;
+  text-align: center;
+  vertical-align: middle;
+  height: 27px;
+  line-height: 27px;
+}
+.anyQuestions .contact-list .mail-item,
+.anyQuestions .contact-list .phone-item {
+  display: inline;
+  vertical-align: middle;
+  width: 27px;
+  height: 27px;
+}
+.anyQuestions .form-div {
+  display: block;
+  margin-top: 20px;
+}
+.anyQuestions .form-div label {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.2;
+  letter-spacing: 3.28px;
+  color: #08A6E4;
+}
+.anyQuestions .form-div input {
+  margin: 20px 0;
+  border: none;
+  border-bottom: 1px solid #95989A;
+  width: 100%;
+}
+
+.footer {
+  box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+}
+.footer .footer-left {
+  padding: 20px 0 0 20px;
+}
+.footer .footer-left h5 {
+  font-size: 26px;
+  font-weight: 300;
+  font-family: Raleway, sans-serif;
+  line-height: 1.2;
+  color: #08A6E4;
+}
+.footer .footer-left p {
+  font-size: 11px;
+  line-height: 1.3;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: #A5A5A5;
+}
+
+@media screen and (min-device-width: 1000px) {
+  .pricing .prices {
+    display: flex;
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=index.css.map */
