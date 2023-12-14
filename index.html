@@ -12,12 +12,11 @@
 
 <body>
     <header>
-        <nav>
+        <div class="nav">
             <div class="nav-item">
                 <h2>OXYGENShop</h2>
             </div>
             <div class="nav-item">
-
                 <div class="hamburguer-menu">
                     <button class="hamburger-button"> ☰ </button>
                     <div class="nav-links">
@@ -29,7 +28,7 @@
                 </div>
             </div>
 
-        </nav>
+        </div>
     </header>
 
     <main>
@@ -39,13 +38,48 @@
             <button>Open your shop</button>
         </section>
 
-        <section>
+        <section class="bg-img">
             <img src="./img/Background-1.png" alt="background">
         </section>
 
         <section class="info">
             <h2>The most popular sales platform in country</h2>
-            <ul>
+
+            <div class="columns">
+                <div class="column">
+                    <div class="column-child red">
+
+                        <img class="person-2-icon" alt="" src="./img/Person-2.svg" />
+                    </div>
+                    <div class="div">100000+</div>
+                    <div class="daily-entries">daily entries</div>
+                </div>
+                <div class="column">
+                    <div class="column-child blue">
+
+                        <img class="eye-2-icon" alt="" src="./img/Eye-2.svg" />
+                    </div>
+                    <div class="div1">2000000+</div>
+                    <div class="seen-products-every-container">
+                        <p class="open-shop-on">seen products</p>
+                        <p class="open-shop-on">every day</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-child green">
+                        <img class="catalog-2-icon" alt="" src="./img/catalog.svg" />
+                    </div>
+                    <div class="div2">10000+</div>
+                    <div class="added-posts-daily-container">
+                        <p class="open-shop-on">added posts</p>
+                        <p class="open-shop-on">daily</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- <ul>
                 <li>
                     <img src="" alt="">
                     <h4>100000+</h4>
@@ -63,35 +97,46 @@
                     <h4>10000+</h4>
                     <p>added posts daily</p>
                 </li>
-            </ul>
+            </ul> -->
         </section>
 
         <section class="description">
             <ul>
                 <li>
-                    <img src="" alt="">
-                    <h3>Be always first</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna
-                        aliqua. Ut enim ad minim veniam.</p>
+                    <div class="description-img-mac">
+                        <img src="./img/Macbook2-2.png" alt="">
+                    </div>
+                    <div class="description-text">
+                        <h3>Be always first</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua. Ut enim ad minim veniam.</p>
+                    </div>
                 </li>
 
                 <li>
-                    <img src="" alt="">
-                    <h3>Your shop is where you are!</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore
-                        magna
-                        aliqua. Ut enim ad minim veniam.</p>
+                    <div class="description-img-iphone">
+                        <img src="./img/iPhone2-2.png" alt="">
+                    </div>
+                    <div class="description-text">
+                        <h3>Your shop is where you are!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna
+                            aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+
                 </li>
 
                 <li>
+                    <div class="description-text">
+                        <h3>Increase recognition your brand</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna
+                            aliqua. Ut enim ad minim veniam.</p>
+                    </div>
                     <img src="" alt="">
-                    <h3>Increase recognition your brand</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore
-                        magna
-                        aliqua. Ut enim ad minim veniam.</p>
                 </li>
             </ul>
             <img src="" alt="">
@@ -272,19 +317,26 @@
                         <input type="email" id="email" name="email">
                     </div>
 
+                    <div class="checkbox-div">
 
-                    <input type="checkbox" name="consent">
-                    <label for="consent">I hereby give consent for my personal data included in my application to be
-                        processed for the purposes of the
-                        recruitment process under the European Parliament’s and Council of the European Union Regulation
-                        on
-                        the Protection of
-                        Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the
-                        free
-                        movement of such
-                        data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
+                        <input type="checkbox" name="consent">
+                        <label for="consent">I hereby give consent for my personal data included in my application to be
+                            processed for the purposes of the
+                            recruitment process under the European Parliament’s and Council of the European Union
+                            Regulation
+                            on
+                            the Protection of
+                            Natural Persons as of 27 April 2016, with regard to the processing of personal data and on
+                            the
+                            free
+                            movement of such
+                            data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
+                    </div>
 
-                    <input type="submit" value="send">
+                    <div class="form-btn-div">
+
+                        <input type="submit" value="send">
+                    </div>
                 </form>
             </div>
         </section>
@@ -296,10 +348,12 @@
             <p>© 2022 OXYGEN, All Rights Reserved</p>
         </div>
         <div class="footer-right">
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
+            <div class="footer-icon">
+                <img src="./img/Twitter.svg" alt="twitter logo">
+            </div>
+            <div class="footer-icon">
+                <img src="./img/Facebook.svg" alt="Facebook logo">
+            </div>
         </div>
     </footer>
 </body>
