@@ -78,11 +78,12 @@ header .nav .nav-links a {
 }
 .sell h1 {
   text-align: center;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 35px;
   line-height: 1.174;
 }
 .sell p {
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.4;
 }
@@ -96,6 +97,10 @@ header .nav .nav-links a {
   line-height: 1.375;
   font-weight: 700;
   border: none;
+}
+.sell button:hover {
+  cursor: pointer;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
 }
 
 .bg-img img {
@@ -197,6 +202,12 @@ header .nav .nav-links a {
 }
 .description .trumpet-li .description-text {
   padding: 40px;
+}
+.description .trumpet-li.desc {
+  margin-bottom: 0;
+}
+.description .trumpet-li.img {
+  margin-top: 0;
 }
 .description li {
   list-style: none;
@@ -773,6 +784,7 @@ header .nav .nav-links a {
   transform: scale(1.01);
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
   line-height: 1.3;
+  cursor: pointer;
 }
 
 .footer {
@@ -807,6 +819,9 @@ header .nav .nav-links a {
 .footer .footer-right .footer-icon {
   display: inline-block;
   margin: 10px;
+}
+.footer .footer-right .footer-icon img:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-device-width: 1000px) {
@@ -846,6 +861,13 @@ header .nav .nav-links a {
     color: #000;
     border-bottom: 3px solid #08A6E4;
   }
+  .sell h1 {
+    margin: 30px;
+  }
+  .sell p,
+  .sell button {
+    margin: 20px;
+  }
   .pricing .prices {
     display: flex;
     justify-content: space-around;
@@ -866,9 +888,39 @@ header .nav .nav-links a {
   }
   .description li {
     display: flex;
+    justify-content: space-between;
+  }
+  .description li .description-img-trumpet {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    justify-content: center;
   }
   .description .mac-li {
     flex-direction: row-reverse;
+  }
+  .description .trumpet-li {
+    display: flex;
+    margin: 0 30px 30px 30px;
+  }
+  .description .trumpet-li.desc {
+    padding: 40px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .description .trumpet-li.img {
+    margin-left: 0;
+    min-width: 440px;
+    text-align: center;
+  }
+  .description .trumpet-card {
+    display: flex;
+    height: 370px;
+    width: 100%;
+  }
+  .description .description-text {
+    width: 100%;
   }
   .description .description-img-mac,
   .description .description-img-iphone {
@@ -880,7 +932,7 @@ header .nav .nav-links a {
   .description .description-text.blue {
     border-bottom: 3px solid #08A6E4;
   }
-  .description .description-text.red {
+  .description .description-text.green {
     border-bottom: 3px solid #55DFB4;
   }
 }/*# sourceMappingURL=index.css.map */
