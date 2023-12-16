@@ -32,39 +32,55 @@ header {
             font-family: Raleway, sans-serif;
         }
 
-        .hamburguer-menu {
-            min-width: 20px;
-            margin-top: -15px;
+        .hamburger-menu {
+
             float: right;
+
+            .hamburger-button {
+                min-width: 20px;
+                margin-top: -15px;
+            }
+
+            .close-hamburger-button {
+                display: none;
+                min-width: 20px;
+                margin-top: -15px;
+            }
+
+            button {
+                color: #08A6E4;
+                background-color: transparent;
+                border: none;
+                padding: 15px;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
         }
 
-        .hamburguer-menu button {
-            color: #08A6E4;
-            background-color: transparent;
-            border: none;
-            padding: 15px;
-            font-size: 24px;
-            cursor: pointer;
-        }
+
 
 
         .nav-links {
             display: none;
-            background-color: #333;
-            color: white;
-            text-align: right;
+            background-color: white;
+            margin-top: 50px;
+            clear: both;
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            z-index: 1;
+            left: 0;
+            padding: 10px;
+
+            a {
+                display: block;
+                padding: 15px;
+                color: #08A6E4;
+                text-decoration: none;
+            }
         }
 
-        .nav-links a {
-            display: block;
-            padding: 15px;
-            color: white;
-            text-decoration: none;
-        }
-
-        .nav-links a:hover {
-            background-color: #111;
-        }
     }
 
 
@@ -235,6 +251,15 @@ header {
     background-color: #F7F7F7;
     padding: 10px;
 
+    .trumpet-li {
+        padding: 0;
+        overflow: hidden;
+
+        .description-text {
+            padding: 40px;
+        }
+    }
+
     li {
         list-style: none;
         padding: 40px;
@@ -301,7 +326,41 @@ header {
             }
         }
 
+
+
+        .description-img-trumpet {
+            float: right;
+            width: 100%;
+            height: 200px;
+            background-color: #55DFB4;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 200px;
+            // overflow: hidden;
+
+            img {
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 100%;
+                max-height: 100%;
+
+            }
+
+            // &::before {
+            //     position: absolute;
+            //     content: "";
+            //     background-color: #55DFB4;
+            //     margin-top: 10px;
+            //     border-radius: 5px;
+            //     display: block;
+            //     float: left;
+            //     width: 100%;
+            //     height: 100%;
+            // }
+
+        }
     }
+
 }
 
 //Pricing section
@@ -878,7 +937,7 @@ header {
 
     .footer-left {
         display: inline-block;
-        padding: 20px 0 0 20px;
+        padding: 20px 0 20px 20px;
         margin: 0 auto;
 
         h5 {
@@ -913,6 +972,54 @@ header {
 
 @media screen and (min-device-width:1000px) {
 
+    header {
+        display: flex;
+
+        .nav {
+            display: flex;
+            align-items: center;
+
+            .hamburger-menu {
+                display: none;
+
+            }
+
+            .hamburger-button {
+                display: none;
+            }
+
+            .nav-links {
+                display: flex;
+                background-color: transparent;
+                position: static;
+                margin-top: 0;
+                padding: 0;
+                margin-left: auto;
+                justify-content: space-around;
+
+                a {
+                    font-size: 11px;
+                    text-align: center;
+                    font-family: 'Open Sans', sans-serif;
+                    color: #A5A5A5;
+                    letter-spacing: 3.28px;
+                    text-transform: uppercase;
+                    line-height: 1.4;
+                    font-weight: 700;
+
+                    &:hover {
+                        color: #000;
+                        border-bottom: 3px solid #08A6E4;
+                    }
+                }
+
+            }
+
+
+        }
+    }
+
+
     .pricing {
 
         .prices {
@@ -936,6 +1043,35 @@ header {
             .column {
                 transform: scale(1.2);
             }
+        }
+    }
+
+    .description {
+        li {
+            display: flex;
+
+        }
+
+        .mac-li {
+            flex-direction: row-reverse;
+        }
+
+
+        .description-img-mac,
+        .description-img-iphone {
+            width: 100%;
+        }
+
+        .description-text.red {
+            border-bottom: 3px solid #FB3B64;
+        }
+
+        .description-text.blue {
+            border-bottom: 3px solid #08A6E4;
+        }
+
+        .description-text.red {
+            border-bottom: 3px solid #55DFB4;
         }
     }
 
