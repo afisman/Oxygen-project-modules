@@ -418,6 +418,7 @@ header .nav .nav-links a {
   font-family: Raleway;
   color: #13253b;
   width: 52px;
+  font-weight: 700;
 }
 .pricing .prices .basic .basic-div {
   top: 95px;
@@ -872,6 +873,173 @@ header .nav .nav-links a {
     display: flex;
     justify-content: space-around;
   }
+  .pricing .prices .basic,
+  .pricing .prices .professional,
+  .pricing .prices .premium {
+    position: relative;
+    width: 320px;
+    height: 461px;
+  }
+  .pricing .prices .basic .begin,
+  .pricing .prices .professional .begin,
+  .pricing .prices .premium .begin {
+    top: 16px;
+    left: 57px;
+  }
+  .pricing .prices .basic .begin,
+  .pricing .prices .basic .button1,
+  .pricing .prices .professional .begin,
+  .pricing .prices .professional .button1,
+  .pricing .prices .premium .begin,
+  .pricing .prices .premium .button1 {
+    position: absolute;
+  }
+  .pricing .prices .basic .button1,
+  .pricing .prices .professional .button1,
+  .pricing .prices .premium .button1 {
+    top: 436px;
+    left: 77.5px;
+    width: 150px;
+    height: 50px;
+    text-align: left;
+    font-size: 13px;
+    color: #fff;
+  }
+  .pricing .prices .basic .basic-child {
+    width: 320px;
+    height: 461px;
+  }
+  .pricing .prices .basic .basic1,
+  .pricing .prices .basic .basic-div {
+    position: relative;
+    text-align: center;
+    display: block;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  .pricing .prices .basic .basic1 {
+    padding-top: 30px;
+    font-size: 20px;
+    width: 100%;
+  }
+  .pricing .prices .basic .basic-div {
+    font-size: 32px;
+    line-height: 48px;
+    width: auto;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  .pricing .prices .basic .basic-text-1,
+  .pricing .prices .basic .basic-text-2,
+  .pricing .prices .basic .basic-text-3,
+  .pricing .prices .basic .basic-text-4,
+  .pricing .prices .basic .basic-text-5 {
+    position: relative;
+    top: 0;
+    left: 110px;
+    width: auto;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+  }
+  .pricing .prices .professional .professional-child {
+    width: 320px;
+    height: 461px;
+  }
+  .pricing .prices .professional .professional1,
+  .pricing .prices .professional .professional-div,
+  .pricing .prices .professional .limited-offer {
+    position: relative;
+    text-align: center;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  .pricing .prices .professional .professional1 {
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .pricing .prices .professional .professional-div {
+    font-size: 32px;
+    line-height: 48px;
+    width: auto;
+    margin: 0 auto;
+    padding: 10px 30px;
+  }
+  .pricing .prices .professional .limited-offer {
+    padding-bottom: 20px;
+  }
+  .pricing .prices .professional .pro-text-1,
+  .pricing .prices .professional .pro-text-2,
+  .pricing .prices .professional .pro-text-3,
+  .pricing .prices .professional .pro-text-4,
+  .pricing .prices .professional .pro-text-5 {
+    position: relative;
+    top: 0;
+    left: 110px;
+    width: auto;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+  }
+  .pricing .prices .premium .premium-child {
+    position: relative;
+    width: 320px;
+    height: 461px;
+  }
+  .pricing .prices .premium .premium1,
+  .pricing .prices .premium .premium-div,
+  .pricing .prices .premium .limited-offer1 {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .pricing .prices .premium .premium1 {
+    padding-top: 30px;
+    font-size: 20px;
+    width: 100%;
+    top: 0;
+  }
+  .pricing .prices .premium .premium-div {
+    font-size: 32px;
+    line-height: 48px;
+    padding: 10px 30px;
+    left: 140px;
+    top: 55px;
+  }
+  .pricing .prices .premium .limited-offer1 {
+    padding-bottom: 20px;
+    top: 125px;
+  }
+  .pricing .prices .premium .prem-text-1,
+  .pricing .prices .premium .prem-text-2,
+  .pricing .prices .premium .prem-text-3,
+  .pricing .prices .premium .prem-text-4,
+  .pricing .prices .premium .prem-text-5 {
+    position: absolute;
+    top: 160px;
+    left: 110px;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+  }
+  .pricing .prices .premium .prem-text-2 {
+    top: 210px;
+  }
+  .pricing .prices .premium .prem-text-3 {
+    top: 260px;
+  }
+  .pricing .prices .premium .prem-text-4 {
+    top: 310px;
+  }
+  .pricing .prices .premium .prem-text-5 {
+    top: 360px;
+  }
   .info {
     margin-bottom: 80px;
     padding: 20px;
@@ -882,6 +1050,8 @@ header .nav .nav-links a {
   }
   .info .columns {
     display: flex;
+    justify-content: space-around;
+    padding: 0 160px;
   }
   .info .columns .column {
     transform: scale(1.2);
@@ -899,15 +1069,22 @@ header .nav .nav-links a {
   }
   .description .mac-li {
     flex-direction: row-reverse;
+    margin-left: 252px;
+    margin-right: 252px;
+  }
+  .description .iphone-li {
+    margin-left: 252px;
+    margin-right: 252px;
   }
   .description .trumpet-li {
     display: flex;
-    margin: 0 30px 30px 30px;
+    margin: 0 0 30px 0;
   }
   .description .trumpet-li.desc {
     padding: 40px;
     margin-bottom: 30px;
     width: 100%;
+    margin-right: 60px;
   }
   .description .trumpet-li.img {
     margin-left: 0;
@@ -917,7 +1094,8 @@ header .nav .nav-links a {
   .description .trumpet-card {
     display: flex;
     height: 370px;
-    width: 100%;
+    margin-left: 252px;
+    margin-right: 252px;
   }
   .description .description-text {
     width: 100%;
@@ -934,5 +1112,18 @@ header .nav .nav-links a {
   }
   .description .description-text.green {
     border-bottom: 3px solid #55DFB4;
+  }
+  .anyQuestions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+  .anyQuestions .anyQuestions-left {
+    width: 100%;
+    margin-left: 200px;
+  }
+  .anyQuestions .anyQuestions-right {
+    margin-right: 200px;
+    width: 100%;
   }
 }/*# sourceMappingURL=index.css.map */
