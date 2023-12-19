@@ -745,6 +745,7 @@ header .nav .nav-links a {
   border: none;
   border-bottom: 1px solid #95989A;
   width: 100%;
+  line-height: 2;
 }
 .anyQuestions .checkbox-div {
   position: relative;
@@ -1169,5 +1170,54 @@ header .nav .nav-links a {
   .anyQuestions .anyQuestions-right {
     margin-right: 200px;
     width: 100%;
+  }
+}
+@media screen and (min-device-width: 1600px) {
+  .pricing .prices {
+    max-width: 1500px;
+  }
+  .pricing .prices .basic,
+  .pricing .prices .professional,
+  .pricing .prices .premium {
+    width: 440px;
+  }
+  .pricing .prices .basic .button1,
+  .pricing .prices .professional .button1,
+  .pricing .prices .premium .button1 {
+    left: 137.5px;
+  }
+  .pricing .prices .basic .basic-child {
+    width: 440px;
+  }
+  .pricing .prices .basic .basic-text-1,
+  .pricing .prices .basic .basic-text-2,
+  .pricing .prices .basic .basic-text-3,
+  .pricing .prices .basic .basic-text-4,
+  .pricing .prices .basic .basic-text-5 {
+    left: 150px;
+  }
+  .pricing .prices .professional .professional-child {
+    width: 440px;
+  }
+  .pricing .prices .professional .pro-text-1,
+  .pricing .prices .professional .pro-text-2,
+  .pricing .prices .professional .pro-text-3,
+  .pricing .prices .professional .pro-text-4,
+  .pricing .prices .professional .pro-text-5 {
+    left: 150px;
+  }
+  .pricing .prices .premium .premium-child {
+    width: 440px;
+  }
+  .pricing .prices .premium .premium-div {
+    left: 200px;
+    top: 55px;
+  }
+  .pricing .prices .premium .prem-text-1,
+  .pricing .prices .premium .prem-text-2,
+  .pricing .prices .premium .prem-text-3,
+  .pricing .prices .premium .prem-text-4,
+  .pricing .prices .premium .prem-text-5 {
+    left: 150px;
   }
 }/*# sourceMappingURL=index.css.map */

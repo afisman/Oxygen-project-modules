@@ -881,6 +881,7 @@ header {
             border: none;
             border-bottom: 1px solid #95989A;
             width: 100%;
+            line-height: 2;
         }
     }
 
@@ -1412,6 +1413,78 @@ header {
         .anyQuestions-right {
             margin-right: 200px;
             width: 100%;
+        }
+    }
+}
+
+@media screen and (min-device-width:1600px) {
+
+    .pricing {
+
+        .prices {
+
+            max-width: 1500px;
+
+            .basic,
+            .professional,
+            .premium {
+                width: 440px;
+
+                .button1 {
+                    left: 137.5px;
+
+                }
+            }
+
+            .basic {
+
+                .basic-child {
+                    width: 440px;
+                }
+
+                .basic-text-1,
+                .basic-text-2,
+                .basic-text-3,
+                .basic-text-4,
+                .basic-text-5 {
+                    left: 150px;
+                }
+            }
+
+            .professional {
+                .professional-child {
+                    width: 440px;
+                }
+
+                .pro-text-1,
+                .pro-text-2,
+                .pro-text-3,
+                .pro-text-4,
+                .pro-text-5 {
+                    left: 150px;
+                }
+            }
+
+            .premium {
+
+                .premium-child {
+                    width: 440px;
+                }
+
+                .premium-div {
+                    left: 200px;
+                    top: 55px;
+                }
+
+                .prem-text-1,
+                .prem-text-2,
+                .prem-text-3,
+                .prem-text-4,
+                .prem-text-5 {
+                    left: 150px;
+                }
+            }
+
         }
     }
 }
