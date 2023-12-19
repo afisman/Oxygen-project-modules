@@ -881,6 +881,9 @@ header .nav .nav-links a {
     flex-direction: column;
     align-items: center;
   }
+  .pricing h2 {
+    margin-bottom: 50px;
+  }
   .pricing .prices {
     display: flex;
     justify-content: space-between;
