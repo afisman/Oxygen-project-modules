@@ -201,7 +201,7 @@ header .nav .nav-links a {
   overflow: hidden;
 }
 .description .trumpet-li .description-text {
-  padding: 40px;
+  padding: 20px;
 }
 .description .trumpet-li.desc {
   margin-bottom: 0;
@@ -220,6 +220,8 @@ header .nav .nav-links a {
 .description li .description-img-iphone {
   margin-bottom: 20px;
   text-align: center;
+  margin: 0 auto;
+  align-self: center;
 }
 .description li .description-img-mac img,
 .description li .description-img-iphone img {
@@ -251,6 +253,9 @@ header .nav .nav-links a {
   background-color: #07ace6;
   z-index: 1;
 }
+.description li .description-text {
+  align-self: center;
+}
 .description li .description-text h3 {
   text-align: left;
   font-size: 30px;
@@ -263,6 +268,7 @@ header .nav .nav-links a {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
+  margin-bottom: 100px;
 }
 .description li .description-img-trumpet {
   float: right;
@@ -825,7 +831,7 @@ header .nav .nav-links a {
   cursor: pointer;
 }
 
-@media screen and (min-device-width: 1000px) {
+@media screen and (min-device-width: 1124px) {
   header {
     display: flex;
   }
@@ -869,9 +875,15 @@ header .nav .nav-links a {
   .sell button {
     margin: 20px;
   }
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .pricing .prices {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 1266px;
   }
   .pricing .prices .basic,
   .pricing .prices .professional,
@@ -879,6 +891,7 @@ header .nav .nav-links a {
     position: relative;
     width: 320px;
     height: 461px;
+    margin: 30px;
   }
   .pricing .prices .basic .begin,
   .pricing .prices .professional .begin,
@@ -1056,9 +1069,20 @@ header .nav .nav-links a {
   .info .columns .column {
     transform: scale(1.2);
   }
+  .description ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .description li {
     display: flex;
     justify-content: space-between;
+  }
+  .description li .description-text h3 {
+    margin-bottom: 30px;
+  }
+  .description li .description-text p {
+    margin-bottom: 30px;
   }
   .description li .description-img-trumpet {
     display: flex;
@@ -1067,35 +1091,46 @@ header .nav .nav-links a {
     height: auto;
     justify-content: center;
   }
-  .description .mac-li {
-    flex-direction: row-reverse;
-    margin-left: 252px;
-    margin-right: 252px;
-  }
-  .description .iphone-li {
-    margin-left: 252px;
-    margin-right: 252px;
-  }
   .description .trumpet-li {
     display: flex;
     margin: 0 0 30px 0;
   }
+  .description .trumpet-li .description-text {
+    padding: 10px;
+  }
+  .description .mac-li {
+    flex-direction: row-reverse;
+    margin-left: 232px;
+    margin-right: 232px;
+    height: 370px;
+    max-width: 1124px;
+  }
+  .description .iphone-card {
+    height: 370px;
+  }
+  .description .iphone-li {
+    margin-left: 232px;
+    margin-right: 232px;
+    height: 370px;
+    max-width: 1124px;
+  }
   .description .trumpet-li.desc {
-    padding: 40px;
+    padding: 30px;
     margin-bottom: 30px;
     width: 100%;
-    margin-right: 60px;
+    margin-right: 40px;
   }
   .description .trumpet-li.img {
     margin-left: 0;
-    min-width: 440px;
+    min-width: 300px;
     text-align: center;
   }
   .description .trumpet-card {
     display: flex;
     height: 370px;
-    margin-left: 252px;
-    margin-right: 252px;
+    margin-left: 232px;
+    margin-right: 232px;
+    max-width: 1124px;
   }
   .description .description-text {
     width: 100%;
@@ -1104,14 +1139,23 @@ header .nav .nav-links a {
   .description .description-img-iphone {
     width: 100%;
   }
-  .description .description-text.red {
+  .description .description-text.red:after {
+    content: "";
     border-bottom: 3px solid #FB3B64;
+    width: 70%;
+    display: block;
   }
-  .description .description-text.blue {
+  .description .description-text.blue:after {
+    content: "";
     border-bottom: 3px solid #08A6E4;
+    width: 70%;
+    display: block;
   }
-  .description .description-text.green {
+  .description .description-text.green:after {
+    content: "";
     border-bottom: 3px solid #55DFB4;
+    width: 70%;
+    display: block;
   }
   .anyQuestions {
     display: flex;
