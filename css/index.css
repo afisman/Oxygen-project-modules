@@ -66,14 +66,13 @@ header .nav .nav-links a {
 }
 
 .sell {
-  margin: 10px;
-  padding: 20px;
+  margin: 1em;
+  padding: 2em;
   text-align: center;
 }
 .sell h1,
 .sell p {
   text-align: center;
-  margin: 16px;
   font-weight: 400;
 }
 .sell h1 {
@@ -81,11 +80,14 @@ header .nav .nav-links a {
   font-family: Raleway, sans-serif;
   font-size: 35px;
   line-height: 1.174;
+  margin-top: 1em;
 }
 .sell p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.4;
+  padding: 1em 0;
+  margin-bottom: 1em;
 }
 .sell button {
   background-color: #08A6E4;
@@ -109,8 +111,8 @@ header .nav .nav-links a {
 }
 
 .info {
-  margin: 10px;
-  padding: 20px;
+  margin: 1em;
+  padding: 2em;
 }
 .info h2 {
   font-size: 30px;
@@ -120,14 +122,13 @@ header .nav .nav-links a {
   font-family: Raleway, sans-serif;
 }
 .info .columns {
-  margin: 40px 0 80px 0;
+  margin-bottom: 2em;
 }
 .info .columns .column {
-  margin-top: 20px;
   display: inline-block;
   position: relative;
   width: 100%;
-  height: 140px;
+  height: 10rem;
   text-align: center;
   font-size: 20px;
   font-family: Raleway, sans-serif;
@@ -161,17 +162,19 @@ header .nav .nav-links a {
   transform: translateX(50%);
   vertical-align: middle;
 }
-.info .columns .column .div,
-.info .columns .column .div1,
-.info .columns .column .div2 {
+.info .columns .column .person-div,
+.info .columns .column .eye-div,
+.info .columns .column .catalog-div {
   letter-spacing: 5.96px;
   line-height: 24px;
   font-weight: 800;
   top: 70%;
+  margin: 1em 0;
+  font-size: 20px;
 }
-.info .columns .column .div,
-.info .columns .column .div1,
-.info .columns .column .div2,
+.info .columns .column .person-div,
+.info .columns .column .eye-div,
+.info .columns .column .catalog-div,
 .info .columns .column .daily-entries,
 .info .columns .column .seen-products-every-container,
 .info .columns .column .added-posts-daily-container {
@@ -194,46 +197,48 @@ header .nav .nav-links a {
 
 .description {
   background-color: #F7F7F7;
-  padding: 10px;
+  padding: 1em;
 }
 .description .trumpet-li {
   padding: 0;
   overflow: hidden;
 }
 .description .trumpet-li .description-text {
-  padding: 20px;
+  padding: 1em;
 }
 .description .trumpet-li.desc {
   margin-bottom: 0;
 }
 .description .trumpet-li.img {
   margin-top: 0;
+  width: 100%;
 }
-.description li {
-  list-style: none;
-  padding: 40px;
+.description .description-card {
+  padding: 2em;
   background-color: white;
-  margin: 30px;
+  margin: 1em;
   position: relative;
 }
-.description li .description-img-mac,
-.description li .description-img-iphone {
-  margin-bottom: 20px;
+.description .description-card .description-img-mac,
+.description .description-card .description-img-iphone {
+  margin-bottom: 1em;
   text-align: center;
   margin: 0 auto;
   align-self: center;
+  transform: scale(1.2);
+  padding: 1em 0;
 }
-.description li .description-img-mac img,
-.description li .description-img-iphone img {
+.description .description-card .description-img-mac img,
+.description .description-card .description-img-iphone img {
   position: relative;
   text-align: center;
   z-index: 2;
 }
-.description li .description-img-mac {
+.description .description-card .description-img-mac {
   position: relative;
   top: 10;
 }
-.description li .description-img-mac:before {
+.description .description-card .description-img-mac:before {
   text-align: right;
   position: absolute;
   content: "";
@@ -244,7 +249,7 @@ header .nav .nav-links a {
   background-color: #FB3B64;
   z-index: 1;
 }
-.description li .description-img-iphone::before {
+.description .description-card .description-img-iphone::before {
   position: absolute;
   content: "";
   width: 125px;
@@ -253,37 +258,46 @@ header .nav .nav-links a {
   background-color: #07ace6;
   z-index: 1;
 }
-.description li .description-text {
+.description .description-card .description-text {
   align-self: center;
 }
-.description li .description-text h3 {
+.description .description-card .description-text h3 {
+  font-family: Raleway, sans-serif;
   text-align: left;
   font-size: 30px;
   font-weight: 400;
   line-height: 1.174;
+  margin: 1em 0;
 }
-.description li .description-text p {
+.description .description-card .description-text p {
   text-align: left;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  margin-bottom: 100px;
+  margin-bottom: 1em;
 }
-.description li .description-img-trumpet {
+.description .description-card .description-img-trumpet {
   float: right;
   width: 100%;
-  height: 200px;
+  height: auto;
   background-color: #55DFB4;
   border-radius: 5px;
   text-align: center;
-  line-height: 200px;
 }
-.description li .description-img-trumpet img {
+.description .description-card .description-img-trumpet img {
   display: inline-block;
   vertical-align: middle;
   max-width: 100%;
   max-height: 100%;
+}
+.description .description-card.trumpet {
+  padding: 0;
+  background-color: transparent;
+}
+.description .description-card.trumpet .description-text {
+  background-color: white;
+  padding: 2em;
 }
 
 .pricing {
@@ -689,13 +703,13 @@ header .nav .nav-links a {
   margin: 30px;
 }
 .anyQuestions h2 {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 1.174;
 }
 .anyQuestions p {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
@@ -880,21 +894,20 @@ header .nav .nav-links a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 7em;
   }
   .pricing h2 {
     margin-bottom: 50px;
   }
   .pricing .prices {
     display: flex;
-    justify-content: space-between;
-    max-width: 1266px;
   }
   .pricing .prices .basic,
   .pricing .prices .professional,
   .pricing .prices .premium {
     position: relative;
-    width: 320px;
-    height: 461px;
+    width: 18rem;
+    height: 33em;
     margin: 30px;
   }
   .pricing .prices .basic .begin,
@@ -915,7 +928,7 @@ header .nav .nav-links a {
   .pricing .prices .professional .button1,
   .pricing .prices .premium .button1 {
     top: 436px;
-    left: 77.5px;
+    left: 5.2em;
     width: 150px;
     height: 50px;
     text-align: left;
@@ -923,8 +936,8 @@ header .nav .nav-links a {
     color: #fff;
   }
   .pricing .prices .basic .basic-child {
-    width: 320px;
-    height: 461px;
+    width: 18rem;
+    height: 33em;
   }
   .pricing .prices .basic .basic1,
   .pricing .prices .basic .basic-div {
@@ -936,7 +949,7 @@ header .nav .nav-links a {
     margin: 0 auto;
   }
   .pricing .prices .basic .basic1 {
-    padding-top: 30px;
+    padding-top: 1em;
     font-size: 20px;
     width: 100%;
   }
@@ -945,7 +958,7 @@ header .nav .nav-links a {
     line-height: 48px;
     width: auto;
     margin: 0 auto;
-    padding: 30px;
+    padding: 1em;
   }
   .pricing .prices .basic .basic-text-1,
   .pricing .prices .basic .basic-text-2,
@@ -954,15 +967,15 @@ header .nav .nav-links a {
   .pricing .prices .basic .basic-text-5 {
     position: relative;
     top: 0;
-    left: 110px;
+    left: 6rem;
     width: auto;
     text-align: center;
-    margin: 10px auto;
-    padding: 20px;
+    margin: 1em auto;
+    padding: 1.3em;
   }
   .pricing .prices .professional .professional-child {
-    width: 320px;
-    height: 461px;
+    width: 18rem;
+    height: 33em;
   }
   .pricing .prices .professional .professional1,
   .pricing .prices .professional .professional-div,
@@ -984,10 +997,10 @@ header .nav .nav-links a {
     line-height: 48px;
     width: auto;
     margin: 0 auto;
-    padding: 10px 30px;
+    padding: 0.5em 1em;
   }
   .pricing .prices .professional .limited-offer {
-    padding-bottom: 20px;
+    padding-bottom: 1.3em;
   }
   .pricing .prices .professional .pro-text-1,
   .pricing .prices .professional .pro-text-2,
@@ -996,23 +1009,23 @@ header .nav .nav-links a {
   .pricing .prices .professional .pro-text-5 {
     position: relative;
     top: 0;
-    left: 110px;
+    left: 6rem;
     width: auto;
     text-align: center;
-    margin: 10px auto;
-    padding: 20px;
+    margin: 1em auto;
+    padding: 1.3em;
   }
   .pricing .prices .premium .premium-child {
     position: relative;
-    width: 320px;
-    height: 461px;
+    width: 18rem;
+    height: 33em;
   }
   .pricing .prices .premium .premium1,
   .pricing .prices .premium .premium-div,
   .pricing .prices .premium .limited-offer1 {
     text-align: center;
     position: absolute;
-    left: 210px;
+    left: 9rem;
     transform: translateX(-50%);
   }
   .pricing .prices .premium .premium1 {
@@ -1025,7 +1038,7 @@ header .nav .nav-links a {
     font-size: 32px;
     line-height: 48px;
     padding: 10px 30px;
-    left: 140px;
+    left: 8rem;
     top: 55px;
   }
   .pricing .prices .premium .limited-offer1 {
@@ -1039,11 +1052,11 @@ header .nav .nav-links a {
   .pricing .prices .premium .prem-text-5 {
     position: absolute;
     top: 160px;
-    left: 110px;
+    left: 6rem;
     width: 100%;
     text-align: center;
-    margin: 10px auto;
-    padding: 20px;
+    margin: 1em auto;
+    padding: 1.3em;
   }
   .pricing .prices .premium .prem-text-2 {
     top: 210px;
@@ -1058,37 +1071,64 @@ header .nav .nav-links a {
     top: 360px;
   }
   .info {
-    margin-bottom: 80px;
-    padding: 20px;
+    margin-bottom: 10em;
+    padding: 1.5em;
   }
   .info h2 {
     font-size: 36px;
     line-height: 1.3;
+    margin-bottom: 1em;
   }
   .info .columns {
     display: flex;
-    justify-content: space-around;
-    padding: 0 160px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
   }
   .info .columns .column {
     transform: scale(1.2);
   }
-  .description ul {
+  .description .description-list {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .description li {
+  .description .description-card {
     display: flex;
     justify-content: space-between;
+    width: 85%;
+    margin: 1rem 0;
+    padding: 0;
+    height: 26rem;
   }
-  .description li .description-text h3 {
-    margin-bottom: 30px;
+  .description .description-card .iphone-li,
+  .description .description-card .mac-li {
+    display: flex;
+    align-self: center;
   }
-  .description li .description-text p {
-    margin-bottom: 30px;
+  .description .description-card .description-img-mac:before {
+    border-radius: 25%;
   }
-  .description li .description-img-trumpet {
+  .description .description-card .description-img-iphone,
+  .description .description-card .description-img-mac {
+    transform: scale(1.7);
+    width: 100%;
+  }
+  .description .description-card .description-text {
+    padding: 0 2em;
+  }
+  .description .description-card .description-text h3 {
+    font-size: 49px;
+    margin-bottom: 2rem;
+    margin-top: 0;
+  }
+  .description .description-card .description-text h3 .responsive-break {
+    display: none;
+  }
+  .description .description-card .description-text p {
+    margin-bottom: 3rem;
+  }
+  .description .description-card .description-img-trumpet {
     display: flex;
     align-items: center;
     width: 100%;
@@ -1097,50 +1137,41 @@ header .nav .nav-links a {
   }
   .description .trumpet-li {
     display: flex;
-    margin: 0 0 30px 0;
+    margin: 0 0 2em 0;
   }
   .description .trumpet-li .description-text {
-    padding: 10px;
+    padding: 1em;
   }
   .description .mac-li {
     flex-direction: row-reverse;
-    margin-left: 232px;
-    margin-right: 232px;
     height: 370px;
-    max-width: 1124px;
   }
   .description .iphone-card {
     height: 370px;
   }
   .description .iphone-li {
-    margin-left: 232px;
-    margin-right: 232px;
     height: 370px;
-    max-width: 1124px;
   }
   .description .trumpet-li.desc {
-    padding: 30px;
-    margin-bottom: 30px;
+    background-color: white;
+    margin-bottom: 2em;
     width: 100%;
-    margin-right: 40px;
+    margin-right: 3em;
   }
   .description .trumpet-li.img {
     margin-left: 0;
     min-width: 300px;
     text-align: center;
+    max-width: 40%;
   }
-  .description .trumpet-card {
+  .description .description-card.trumpet {
     display: flex;
-    height: 370px;
-    margin-left: 232px;
-    margin-right: 232px;
-    max-width: 1124px;
+  }
+  .description .description-card.iphone,
+  .description .description-card.mac {
+    justify-content: center;
   }
   .description .description-text {
-    width: 100%;
-  }
-  .description .description-img-mac,
-  .description .description-img-iphone {
     width: 100%;
   }
   .description .description-text.red:after {
@@ -1163,22 +1194,38 @@ header .nav .nav-links a {
   }
   .anyQuestions {
     display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
   }
   .anyQuestions .anyQuestions-left {
     width: 100%;
-    margin-left: 200px;
+    margin-left: 1em;
+    padding: 1.5em;
+  }
+  .anyQuestions .anyQuestions-left h2 {
+    margin-bottom: 0.5em;
+  }
+  .anyQuestions .anyQuestions-left .contact-list {
+    width: 90%;
+    display: flex;
+  }
+  .anyQuestions .anyQuestions-left .contact-list .mail {
+    margin-right: 1em;
   }
   .anyQuestions .anyQuestions-right {
-    margin-right: 200px;
+    margin-right: 1em;
     width: 100%;
+    padding: 1.5em;
+  }
+  .anyQuestions .anyQuestions-right .checkbox-div {
+    margin-bottom: 1em;
+  }
+  .anyQuestions .anyQuestions-right .checkbox-div label {
+    text-align: left;
   }
 }
 @media screen and (min-device-width: 1600px) {
-  .pricing .prices {
-    max-width: 1500px;
-  }
   .pricing .prices .basic,
   .pricing .prices .professional,
   .pricing .prices .premium {
@@ -1216,11 +1263,25 @@ header .nav .nav-links a {
     left: 195px;
     top: 55px;
   }
+  .pricing .prices .premium .limited-offer1,
+  .pricing .prices .premium .premium1 {
+    left: 210px;
+  }
   .pricing .prices .premium .prem-text-1,
   .pricing .prices .premium .prem-text-2,
   .pricing .prices .premium .prem-text-3,
   .pricing .prices .premium .prem-text-4,
   .pricing .prices .premium .prem-text-5 {
     left: 150px;
+  }
+  .description .description-card {
+    width: 50%;
+  }
+  .description .description-card .description-img-iphone,
+  .description .description-card .description-img-mac {
+    transform: scale(2);
+  }
+  .anyQuestions {
+    width: 40%;
   }
 }/*# sourceMappingURL=index.css.map */
