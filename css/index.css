@@ -878,19 +878,9 @@ header .nav .nav-links a:hover {
     padding: 0;
     margin-left: auto;
     justify-content: space-around;
-  }
-  header .nav .nav-links a {
-    font-size: 11px;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    color: #A5A5A5;
-    letter-spacing: 3.28px;
-    text-transform: uppercase;
-    line-height: 1.4;
-    font-weight: 700;
+    box-shadow: none;
   }
   header .nav .nav-links a:hover {
-    color: #000;
     border-bottom: 3px solid #08A6E4;
   }
   .sell h1 {
