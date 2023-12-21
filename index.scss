@@ -978,7 +978,7 @@ header {
 
     .footer-left {
         display: inline-block;
-        padding: 20px 0 20px 20px;
+        padding: 1.2em 0 1.2em 2em;
         margin: 0 auto;
 
         h5 {
@@ -1002,7 +1002,7 @@ header {
         display: inline-block;
         position: absolute;
         right: 0;
-        margin: 20px;
+        margin: 1.4em 2em;
 
         .footer-icon {
             display: inline-block;
@@ -1294,7 +1294,7 @@ header {
             display: flex;
             justify-content: center;
             margin: 0 auto;
-            width: 50%;
+            width: 60%;
 
             .column {
                 transform: scale(1.2);
@@ -1354,7 +1354,7 @@ header {
                 }
 
                 p {
-                    margin-bottom: 5rem;
+                    margin-bottom: 3rem;
                 }
             }
 
@@ -1399,6 +1399,7 @@ header {
             margin-bottom: 2em;
             width: 100%;
             margin-right: 3em;
+            padding: 2em;
         }
 
         .trumpet-li.img {
@@ -1446,7 +1447,7 @@ header {
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        width: 60%;
+        width: 70%;
 
         .anyQuestions-left {
             width: 100%;
@@ -1458,7 +1459,7 @@ header {
             }
 
             .contact-list {
-                width: 90%;
+                width: 100%;
                 display: flex;
 
                 .mail {
@@ -1560,6 +1561,12 @@ header {
 
     .description {
         .description-card {
+            width: 50%;
+        }
+    }
+
+    .info {
+        .columns {
             width: 50%;
         }
     }
