@@ -37,6 +37,7 @@ header {
             float: right;
 
             .hamburger-button {
+                // display: none;
                 min-width: 20px;
                 margin-top: -15px;
             }
@@ -64,7 +65,7 @@ header {
         .nav-links {
             display: none;
             background-color: white;
-            margin-top: 50px;
+            margin-top: 3em;
             clear: both;
             position: absolute;
             background-color: white;
@@ -72,12 +73,23 @@ header {
             z-index: 1;
             left: 0;
             padding: 10px;
+            box-shadow: 0px 4px 4px 0px #0000004A;
 
             a {
                 display: block;
-                padding: 15px;
-                color: #08A6E4;
+                padding: 10px;
+                color: #A5A5A5;
                 text-decoration: none;
+                font-size: 11px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 700;
+                letter-spacing: 3.28px;
+                line-height: 1em;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: #000;
+                }
             }
         }
 
@@ -91,7 +103,6 @@ header {
 //Sell section
 
 .sell {
-    // display: block;
     margin: 1em;
     padding: 2em;
     text-align: center;
@@ -107,7 +118,7 @@ header {
         font-family: Raleway, sans-serif;
         font-size: 35px;
         line-height: 1.174;
-        margin-top: 1em;
+        margin-top: 1.5em;
     }
 
     p {
@@ -167,7 +178,6 @@ header {
         margin-bottom: 2em;
 
         .column {
-            // margin-top: 20px;
             display: inline-block;
             position: relative;
             width: 100%;
@@ -366,7 +376,6 @@ header {
             background-color: #55DFB4;
             border-radius: 5px;
             text-align: center;
-            // line-height: 200px;
 
             img {
                 display: inline-block;
@@ -400,7 +409,7 @@ header {
     padding-top: 50px;
 
     h2 {
-        font-family: Raleway;
+        font-family: Raleway, sans-serif;
         font-weight: 400;
         font-size: 36px;
         line-height: 1.174;
@@ -469,7 +478,6 @@ header {
                 left: 0;
                 font-size: 9px;
                 color: #eb476e;
-                font-family: Raleway;
             }
 
             .begin {
@@ -519,7 +527,7 @@ header {
                 left: 50px;
                 font-size: 20px;
                 line-height: 24px;
-                font-family: Raleway;
+                font-family: Raleway, sans-serif;
                 color: #13253b;
                 width: 52px;
                 font-weight: 700;
@@ -618,7 +626,7 @@ header {
                 left: 20px;
                 font-size: 20px;
                 line-height: 24px;
-                font-family: Raleway;
+                font-family: Raleway, sans-serif;
                 color: #13253b;
                 width: 52px;
             }
@@ -640,7 +648,7 @@ header {
                 top: 150px;
                 left: 30px;
                 font-size: 12px;
-                font-family: Raleway;
+                font-family: Raleway, sans-serif;
                 color: #13253b;
             }
 
@@ -743,7 +751,7 @@ header {
                 left: 31px;
                 font-size: 20px;
                 line-height: 24px;
-                font-family: Raleway;
+                font-family: Raleway, sans-serif;
                 color: #13253b;
             }
 
@@ -769,7 +777,7 @@ header {
                 top: 145.23px;
                 left: 38px;
                 font-size: 12px;
-                font-family: Raleway;
+                font-family: Raleway, sans-serif;
                 color: #13253b;
             }
 
@@ -898,6 +906,7 @@ header {
             line-height: 1.2;
             letter-spacing: 3.28px;
             color: #08A6E4;
+            text-transform: uppercase;
         }
 
         input {
@@ -1079,8 +1088,7 @@ header {
 
         .prices {
             display: flex;
-            // justify-content: space-between;
-            // max-width: 1266px;
+
 
             .basic,
             .professional,
@@ -1171,7 +1179,6 @@ header {
                     display: block;
                     top: 0;
                     left: 0;
-                    // margin: 0 auto;
                 }
 
                 .professional1 {
@@ -1295,7 +1302,6 @@ header {
         .columns {
             display: flex;
             justify-content: center;
-            // padding: 0 25em;
             margin: 0 auto;
             width: 50%;
 
@@ -1344,6 +1350,7 @@ header {
 
             .description-text {
                 padding: 0 2em;
+                width: 100%;
 
                 h3 {
                     font-size: 49px;
@@ -1356,7 +1363,7 @@ header {
                 }
 
                 p {
-                    margin-bottom: 3rem;
+                    margin-bottom: 5rem;
                 }
             }
 
@@ -1418,15 +1425,6 @@ header {
         .description-card.mac {
             justify-content: center;
         }
-
-        .description-text {
-            width: 100%;
-        }
-
-        // .description-img-mac,
-        // .description-img-iphone {
-        //     width: 100%;
-        // }
 
         .description-text.red:after {
             content: "";
@@ -1501,8 +1499,6 @@ header {
 
         .prices {
 
-            // max-width: 1500px;
-
             .basic,
             .professional,
             .premium {
@@ -1574,13 +1570,6 @@ header {
     .description {
         .description-card {
             width: 50%;
-
-
-
-            .description-img-iphone,
-            .description-img-mac {
-                transform: scale(2);
-            }
         }
     }
 

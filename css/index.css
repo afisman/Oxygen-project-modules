@@ -49,7 +49,7 @@ header .nav .hamburger-menu button {
 header .nav .nav-links {
   display: none;
   background-color: white;
-  margin-top: 50px;
+  margin-top: 3em;
   clear: both;
   position: absolute;
   background-color: white;
@@ -57,12 +57,22 @@ header .nav .nav-links {
   z-index: 1;
   left: 0;
   padding: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
 }
 header .nav .nav-links a {
   display: block;
-  padding: 15px;
-  color: #08A6E4;
+  padding: 10px;
+  color: #A5A5A5;
   text-decoration: none;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3.28px;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+header .nav .nav-links a:hover {
+  color: #000;
 }
 
 .sell {
@@ -80,7 +90,7 @@ header .nav .nav-links a {
   font-family: Raleway, sans-serif;
   font-size: 35px;
   line-height: 1.174;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 .sell p {
   font-family: "Open Sans", sans-serif;
@@ -306,7 +316,7 @@ header .nav .nav-links a {
   padding-top: 50px;
 }
 .pricing h2 {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.174;
@@ -386,7 +396,6 @@ header .nav .nav-links a {
   left: 0;
   font-size: 9px;
   color: #eb476e;
-  font-family: Raleway;
 }
 .pricing .prices .basic .begin,
 .pricing .prices .professional .begin,
@@ -435,7 +444,7 @@ header .nav .nav-links a {
   left: 50px;
   font-size: 20px;
   line-height: 24px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   color: #13253b;
   width: 52px;
   font-weight: 700;
@@ -515,7 +524,7 @@ header .nav .nav-links a {
   left: 20px;
   font-size: 20px;
   line-height: 24px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   color: #13253b;
   width: 52px;
 }
@@ -535,7 +544,7 @@ header .nav .nav-links a {
   top: 150px;
   left: 30px;
   font-size: 12px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   color: #13253b;
 }
 .pricing .prices .professional .pro-text-1 {
@@ -621,7 +630,7 @@ header .nav .nav-links a {
   left: 31px;
   font-size: 20px;
   line-height: 24px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   color: #13253b;
 }
 .pricing .prices .premium .premium-div,
@@ -644,7 +653,7 @@ header .nav .nav-links a {
   top: 145.23px;
   left: 38px;
   font-size: 12px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   color: #13253b;
 }
 .pricing .prices .premium .prem-text-1,
@@ -753,6 +762,7 @@ header .nav .nav-links a {
   line-height: 1.2;
   letter-spacing: 3.28px;
   color: #08A6E4;
+  text-transform: uppercase;
 }
 .anyQuestions .form-div input {
   margin: 20px 0;
@@ -1116,6 +1126,7 @@ header .nav .nav-links a {
   }
   .description .description-card .description-text {
     padding: 0 2em;
+    width: 100%;
   }
   .description .description-card .description-text h3 {
     font-size: 49px;
@@ -1126,7 +1137,7 @@ header .nav .nav-links a {
     display: none;
   }
   .description .description-card .description-text p {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
   .description .description-card .description-img-trumpet {
     display: flex;
@@ -1170,9 +1181,6 @@ header .nav .nav-links a {
   .description .description-card.iphone,
   .description .description-card.mac {
     justify-content: center;
-  }
-  .description .description-text {
-    width: 100%;
   }
   .description .description-text.red:after {
     content: "";
@@ -1276,10 +1284,6 @@ header .nav .nav-links a {
   }
   .description .description-card {
     width: 50%;
-  }
-  .description .description-card .description-img-iphone,
-  .description .description-card .description-img-mac {
-    transform: scale(2);
   }
   .anyQuestions {
     width: 40%;
