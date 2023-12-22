@@ -8,33 +8,6 @@ body {
     min-width: 320px;
 }
 
-//Scroll bar
-
-.scroll {
-    position: fixed;
-    // top: 0;
-    width: 100%;
-    background-color: #c7c9ca;
-    z-index: 5;
-
-    .scroll-container {
-
-        width: 100%;
-        height: .5em;
-        background: #d3d0d0;
-        // z-index: 1;
-
-        .scroll-bar {
-            width: 0%;
-            height: .5em;
-            background: #08A6E4;
-        }
-
-
-    }
-}
-
-
 // Navigation bar
 
 header {
@@ -127,10 +100,29 @@ header {
 
     }
 
+    .scroll {
+        position: fixed;
+        width: 100%;
+        background-color: #c7c9ca;
+        z-index: 5;
+
+        .scroll-container {
+
+            width: 100%;
+            height: .5em;
+            background: #d3d0d0;
+
+            .scroll-bar {
+                width: 0%;
+                height: .5em;
+                background: #08A6E4;
+            }
+
+
+        }
+    }
 
 }
-
-
 
 //Sell section
 
@@ -1090,12 +1082,12 @@ header {
     .sell {
 
         h1 {
-            margin: 30px;
+            margin-top: 3em;
         }
 
         p,
         button {
-            margin: 20px;
+            margin: 1.5em;
         }
     }
 
