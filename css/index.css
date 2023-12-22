@@ -8,6 +8,30 @@ body {
   min-width: 320px;
 }
 
+.scroll {
+  position: fixed;
+  width: 100%;
+  background-color: #c7c9ca;
+  z-index: 5;
+}
+.scroll .scroll-container {
+  width: 100%;
+  height: 0.5em;
+  background: #d3d0d0;
+}
+.scroll .scroll-container .scroll-bar {
+  width: 0%;
+  height: 0.5em;
+  background: #08A6E4;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+  top: 0;
+  background-color: #fff;
+}
 header .nav {
   width: 100%;
   height: 60px;
