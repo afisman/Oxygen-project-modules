@@ -2,14 +2,18 @@ const modal_container = document.getElementById('modal_container');
 const input_modal = document.getElementById('input_modal');
 const modal_form = document.getElementById('modal_form');
 const close_modal_btn = document.getElementById('close_modal_btn');
+const input_modal_submit = document.getElementById('input_modal_submit');
 
-function modalOpen() {
-    localStorage.setItem('modalOpen', 'false')
+
+localStorage.clear()
+const modalOpen = () => {
+    localStorage.setItem('modalOpen', 'true')
 }
 
 function isOpen() {
-    return localStorage.getItem('modalOpen') === 'false'
+    return localStorage.getItem('modalOpen') === 'true'
 }
+
 
 if (!isOpen()) {
     const initializeTimeout = setTimeout(() => {
@@ -17,13 +21,15 @@ if (!isOpen()) {
     }, 5000);
 
     const checkScroll = () => {
-        const windowScroll = document.documentElement.scrollTop;
-        const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const percentageScrolled = (windowScroll / windowHeight) * 100;
+        const bodyHeight = document.body.offsetHeight;
+        const scrollY = window.scrollY;
+        const scrollPercentage = (scrollY / bodyHeight) * 100;
 
-        if (!isOpen() && percentageScrolled >= 25) {
+        if (!isOpen() && scrollPercentage >= 25) {
+
             clearTimeout(initializeTimeout);
-            modal_container.style.display = 'flex'
+            modal_container.style.display = 'flex';
+
         }
     }
 
@@ -51,3 +57,51 @@ modal_container.addEventListener("click", (event) => {
 
     }
 });
+
+
+const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+input_modal_submit.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const email = input_modal.value;
+    let emailValid = true;
+    console.log(email)
+    const sendInput = (url, data) => {
+        console.log(data)
+        try {
+            const sendData = fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+                body: JSON.stringify({ email: data }),
+            })
+                .then((res) => {
+                    console.log(res)
+                    if (res.ok) {
+                        console.log(res.ok)
+                    }
+
+                })
+        } catch (error) {
+            console.error("Error sending the form:", error);
+        }
+    }
+
+    if (!emailRegex.test(email)) {
+        input_modal.style.borderColor = '#eb476e';
+        emailValid = false;
+    } else {
+        emailValid = true;
+    }
+
+    if (emailValid) {
+        modal_container.style.display = 'none';
+        sendInput("https://jsonplaceholder.typicode.com/posts", input_modal.value);
+        modalOpen()
+    } else {
+        input_modal.style.border = '1px solid #eb476e'
+    }
+
+})
