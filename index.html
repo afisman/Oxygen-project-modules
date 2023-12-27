@@ -338,21 +338,24 @@
             <div class="anyQuestions-right">
 
                 <div class="form">
-                    <form action="" method="POST">
+                    <form action="" method="POST" id="contact_form">
                         <div class="form-div">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" name="name">
+                            <label for="name_input" class="form-label" id="name_label">Name</label>
+                            <input type="text" id="name_input" name="name">
                         </div>
 
                         <div class="form-div">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" name="email">
+                            <label for="email_input" class="form-label" id="email_label">Email</label>
+                            <input type="email" id="email_input" name="email">
                         </div>
 
                         <div class="checkbox-div">
+                            <div id="consent_div">
+                                <input type="checkbox" name="consent" id="consent">
+                            </div>
 
-                            <input type="checkbox" name="consent" id="consent">
-                            <label for="consent">I hereby give consent for my personal data included in my application
+                            <label for="consent" id="consent_label">I hereby give consent for my personal data included
+                                in my application
                                 to be
                                 processed for the purposes of the
                                 recruitment process under the European Parliament’s and Council of the European Union
@@ -368,8 +371,7 @@
                         </div>
 
                         <div class="form-btn-div">
-
-                            <input type="submit" value="send">
+                            <input type="submit" value="send" id="form_btn_submit">
                         </div>
                     </form>
                 </div>
@@ -399,6 +401,8 @@
     <script type="text/javascript" src="./scripts/percentageScroller.js"></script>
     <script type="text/javascript" src="./scripts/returnToTop.js"></script>
     <script type="text/javascript" src="./scripts/modal.js"></script>
+    <script type="text/javascript" src="./scripts/formValidation.js"></script>
+
 
 
 

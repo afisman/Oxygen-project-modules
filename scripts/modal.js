@@ -5,7 +5,7 @@ const close_modal_btn = document.getElementById('close_modal_btn');
 const input_modal_submit = document.getElementById('input_modal_submit');
 
 
-localStorage.clear()
+// localStorage.clear()
 const modalOpen = () => {
     localStorage.setItem('modalOpen', 'true')
 }
@@ -66,19 +66,16 @@ input_modal_submit.addEventListener('click', (e) => {
 
     const email = input_modal.value;
     let emailValid = true;
-    console.log(email)
     const sendInput = (url, data) => {
-        console.log(data)
         try {
             const sendData = fetch(url, {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json; charset=UTF-8',
                 },
-                body: JSON.stringify({ email: data }),
+                body: JSON.stringify(data),
             })
                 .then((res) => {
-                    console.log(res)
                     if (res.ok) {
                         console.log(res.ok)
                     }
@@ -92,13 +89,14 @@ input_modal_submit.addEventListener('click', (e) => {
     if (!emailRegex.test(email)) {
         input_modal.style.borderColor = '#eb476e';
         emailValid = false;
+        alert('Fill with a correct email address')
     } else {
         emailValid = true;
     }
 
     if (emailValid) {
         modal_container.style.display = 'none';
-        sendInput("https://jsonplaceholder.typicode.com/posts", input_modal.value);
+        sendInput("https://jsonplaceholder.typicode.com/posts", input_modal);
         modalOpen()
     } else {
         input_modal.style.border = '1px solid #eb476e'
