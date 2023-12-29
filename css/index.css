@@ -422,6 +422,12 @@ header .scroll .scroll-container .scroll-bar {
   font-size: 36px;
   line-height: 1.174;
 }
+.pricing .currencies {
+  width: 100%;
+}
+.pricing .currencies .change-currency {
+  width: 10%;
+}
 .pricing .prices {
   display: inline-block;
   align-items: center;
@@ -1352,6 +1358,9 @@ header .scroll .scroll-container .scroll-bar {
   }
 }
 @media screen and (min-device-width: 1600px) {
+  .pricing .currencies .change-currency {
+    width: 5%;
+  }
   .pricing .prices .basic,
   .pricing .prices .professional,
   .pricing .prices .premium {

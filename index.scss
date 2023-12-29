@@ -74,7 +74,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
 }
 
 .input-modal-submit {
@@ -523,6 +522,14 @@ header {
         font-weight: 400;
         font-size: 36px;
         line-height: 1.174;
+    }
+
+    .currencies {
+        width: 100%;
+
+        .change-currency {
+            width: 10%;
+        }
     }
 
     .prices {
@@ -1626,6 +1633,12 @@ header {
 @media screen and (min-device-width:1600px) {
 
     .pricing {
+
+        .currencies {
+            .change-currency {
+                width: 5%;
+            }
+        }
 
         .prices {
 
