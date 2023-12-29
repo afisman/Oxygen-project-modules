@@ -428,6 +428,10 @@ header .scroll .scroll-container .scroll-bar {
 .pricing .currencies .change-currency {
   width: 10%;
 }
+.pricing .currencies select {
+  border-radius: 0.25rem;
+  height: 1.5rem;
+}
 .pricing .prices {
   display: inline-block;
   align-items: center;
