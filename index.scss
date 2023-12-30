@@ -965,6 +965,43 @@ header {
     }
 }
 
+.slider-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .slider {
+        width: 50%;
+
+        .img-slider {
+            width: 100%;
+            height: 10rem;
+            border-radius: .25rem;
+        }
+
+        .buttons-slider-div {
+            padding: 1rem;
+            display: flex;
+            justify-content: space-around;
+
+            button {
+                padding: .5rem;
+                background-color: #08A6E4;
+                color: white;
+                border: none;
+                border-radius: .25rem;
+            }
+
+            p {
+                padding: .5rem;
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+    }
+}
+
+
 .anyQuestions {
     display: block;
     margin: 30px;
