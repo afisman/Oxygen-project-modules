@@ -7,12 +7,12 @@ class Slider {
         this.img = document.querySelectorAll(".img-slider");
         this.caption = document.getElementById('image_caption');
         this.indexImg = 0;
-        this.showImg(this.indexImg);
+        this.showImage(this.indexImg);
         this.beforeImage();
         this.nextImage();
     }
 
-    showImg(index) {
+    showImage(index) {
         this.img.forEach((image, i) => {
             if (i === index) {
                 this.caption.innerHTML = image.alt;
@@ -29,13 +29,13 @@ class Slider {
             } else {
                 this.indexImg = (this.indexImg - 1) % this.img.length;
             }
-            this.showImg(this.indexImg);
+            this.showImage(this.indexImg);
         });
     }
     nextImage() {
         this.buttonNext.addEventListener("click", () => {
             this.indexImg = (this.indexImg + 1) % this.img.length;
-            this.showImg(this.indexImg);
+            this.showImage(this.indexImg);
         });
     }
 
