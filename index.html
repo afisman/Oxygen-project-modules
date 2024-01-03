@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -170,152 +171,97 @@
             </div>
         </section>
 
-        <section class="pricing" id="pricing">
+        <section class="pricing-section" id="pricing">
             <h2>Pricing</h2>
 
-            <div class="currencies">
-                <select name="currency" id="change_currency" class="change-currency">
-                    <Option value="eur">EUR</Option>
-                    <Option value="usd">USD</Option>
-                    <Option value="gbp">GBP</Option>
-                </select>
-            </div>
+            <select name="currency" id="change_currency" class="change-currency">
+                <Option value="eur">EUR</Option>
+                <Option value="usd">USD</Option>
+                <Option value="gbp">GBP</Option>
+            </select>
 
             <div class="prices">
+                <article class="basic">
+                    <div class="article-info">
+                        <h2 class="article-title">Basic</h2>
+                        <h3 class="article-price" id="price_basic">€0</h3>
+                    </div>
+                    <ul class="article-list">
+                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article-list-p">100 MB HDD</p>
+                        </li>
+                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article-list-p">1 Subdomain</p>
+                        </li>
+                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article-list-p">2 E-mails</p>
+                        </li>
+                        <li class="article-list-item"><img src="./img/Cross.svg" alt="checkbox">
+                            <p class="article-list-p">Two years license</p>
+                        </li>
+                        <li class="article-list-item"><img src="./img/Cross.svg" alt="checkbox">
+                            <p class="article-list-p">Full Support</p>
+                        </li>
+                    </ul>
+                    <div class="button2">
+                        <button class="button-inner btn-red">Begin</button>
+                    </div>
+                </article>
+                <article class="professional">
+                    <div class="article-info">
+                        <h2 class="article-title">Professional</h2>
+                        <h3 class="article-price" id="price_pro">€25</h3>
+                        <p class="limited-offer">Limited offer</p>
+                    </div>
+                    <ul class="article-list">
+                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article-list-p">500 MB HDD</p>
+                        </li>
+                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article-list-p">2 Subdomains</p>
+                        </li>
+                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article-list-p">5 E-mails</p>
+                        </li>
+                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article-list-p">One year license</p>
+                        </li>
+                        <li class="article-list-item"><img src="./img/Cross.svg" alt="checkbox">
+                            <p class="article-list-p">Full Support</p>
+                        </li>
+                    </ul>
+                    <div class="button2">
+                        <button class="button-inner btn-blue">Begin</button>
+                    </div>
+                </article>
+                <diarticlev class="premium">
 
-                <div class="basic">
-                    <div class="basic-child"></div>
-                    <b class="basic1">Basic</b>
-                    <div class="basic-div" id="price_basic">€0</div>
-                    <div class="basic-text-1">
-                        <div class="mb-hdd">100 MB HDD</div>
-                        <div class="checkbox">
-                            <img class="checkbox-item" alt="" src="./img/checkbox.svg" />
-                        </div>
+                    <div class="article-info">
+                        <h2 class="article-title">Premium</h2>
+                        <h3 class="article-price" id="price_premium">$60</h3>
+                        <p class="limited-offer">Limited offer</p>
                     </div>
-                    <div class="basic-text-2">
-                        <div class="mb-hdd">1 Subdomain</div>
-                        <div class="checkbox">
-                            <img class="checkbox-item" alt="" src="./img/checkbox.svg" />
-
-                        </div>
+                    <ul class="article-list">
+                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article-list-p">2 GB HDD</p>
+                        </li>
+                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article-list-p">5 Subdomains</p>
+                        </li>
+                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article-list-p">20 E-mails</p>
+                        </li>
+                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article-list-p">Two years license</p>
+                        </li>
+                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article-list-p">Full Support</p>
+                        </li>
+                    </ul>
+                    <div class="button2">
+                        <button class="button-inner btn-green">Begin</button>
                     </div>
-                    <div class="basic-text-3">
-                        <div class="mb-hdd">2 E-mails</div>
-                        <div class="checkbox">
-                            <img class="checkbox-item" alt="" src="./img/checkbox.svg" />
-
-                        </div>
-                    </div>
-                    <div class="basic-text-4">
-                        <div class="mb-hdd">Two years license</div>
-                        <div class="cross">
-                            <div class="cross-child"></div>
-                            <b class="x">x</b>
-                        </div>
-                    </div>
-                    <div class="basic-text-5">
-                        <div class="mb-hdd">Full support</div>
-                        <div class="cross">
-                            <div class="cross-child"></div>
-                            <b class="x">x</b>
-                        </div>
-                    </div>
-                    <div class="button1">
-                        <div class="button-inner1"></div>
-                        <b class="begin">Begin</b>
-                    </div>
-                </div>
-                <div class="professional">
-                    <div class="professional-child"></div>
-                    <b class="professional1">Professional</b>
-                    <div class="professional-div" id="price_pro">€25</div>
-                    <b class="limited-offer">Limited offer</b>
-                    <div class="pro-text-1">
-                        <div class="mb-hdd">500 MB HDD</div>
-                        <div class="checkbox">
-                            <img class="checkbox-item" alt="" src="./img/checkbox.svg" />
-
-                        </div>
-                    </div>
-                    <div class="pro-text-2">
-                        <div class="mb-hdd">2 Subdomains</div>
-                        <div class="checkbox">
-                            <img class="checkbox-item" alt="" src="./img/checkbox.svg" />
-
-                        </div>
-                    </div>
-                    <div class="pro-text-3">
-                        <div class="mb-hdd">5 E-mails</div>
-                        <div class="checkbox">
-                            <img class="checkbox-item" alt="" src="./img/checkbox.svg" />
-
-                        </div>
-                    </div>
-                    <div class="pro-text-4">
-                        <div class="checkbox">
-                            <img class="checkbox-item" alt="" src="./img/checkbox.svg" />
-
-                        </div>
-                        <div class="mb-hdd">One year license</div>
-                    </div>
-                    <div class="pro-text-5">
-                        <div class="mb-hdd">Full support</div>
-                        <div class="cross">
-                            <div class="cross-child"></div>
-                            <div class="x">x</div>
-                        </div>
-                    </div>
-                    <div class="button1">
-                        <div class="button-inner2"></div>
-                        <b class="begin1">Begin</b>
-                    </div>
-                </div>
-                <div class="premium">
-                    <div class="premium-child"></div>
-                    <b class="premium1">Premium</b>
-                    <div class="premium-div" id="price_premium">$60</div>
-                    <b class="limited-offer1">Limited offer</b>
-                    <div class="prem-text-1">
-                        <div class="mb-hdd">2 GB HDD</div>
-                        <div class="checkbox">
-                            <img class="checkbox-item" alt="" src="./img/checkbox.svg" />
-
-                        </div>
-                    </div>
-                    <div class="prem-text-2">
-                        <div class="mb-hdd">5 Subdomains</div>
-                        <div class="checkbox">
-                            <img class="checkbox-item" alt="" src="./img/checkbox.svg" />
-
-                        </div>
-                    </div>
-                    <div class="prem-text-3">
-                        <div class="mb-hdd">20 E-mails</div>
-                        <div class="checkbox">
-                            <img class="checkbox-item" alt="" src="./img/checkbox.svg" />
-
-                        </div>
-                    </div>
-                    <div class="prem-text-4">
-                        <div class="mb-hdd">Two years license</div>
-                        <div class="checkbox">
-                            <img class="checkbox-item" alt="" src="./img/checkbox.svg" />
-
-                        </div>
-                    </div>
-                    <div class="prem-text-5">
-                        <div class="mb-hdd">Full support</div>
-                        <div class="checkbox">
-                            <img class="checkbox-item" alt="" src="./img/checkbox.svg" />
-
-                        </div>
-                    </div>
-                    <div class="button1">
-                        <div class="button-inner3"></div>
-                        <b class="begin">Begin</b>
-                    </div>
-                </div>
+                    </article>
 
             </div>
 
@@ -339,7 +285,7 @@
         <section class="anyQuestions" id="anyQuestions">
             <div class="anyQuestions-left">
 
-                <h2>Any questions</h2>
+                <h2>Any questions?</h2>
                 <p>Leave us your email address or call us!</p>
 
                 <div class="contact-list">
