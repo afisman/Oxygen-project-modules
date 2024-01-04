@@ -4,7 +4,7 @@ class Slider {
         this.slider = document.getElementById(slider);
         this.buttonPrevious = document.getElementById('slider_button_prev');
         this.buttonNext = document.getElementById('slider_button_next');
-        this.img = document.querySelectorAll(".img-slider");
+        this.img = document.querySelectorAll(".slider__img");
         this.caption = document.getElementById('image_caption');
         this.indexImg = 0;
         this.showImage(this.indexImg);

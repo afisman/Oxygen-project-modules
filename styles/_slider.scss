@@ -7,18 +7,18 @@
     .slider {
         width: 50%;
 
-        .img-slider {
+        &__img {
             width: 100%;
             height: auto;
             border-radius: .25rem;
         }
 
-        .buttons-slider-div {
+        &__buttons {
             padding: 1rem;
             display: flex;
             justify-content: space-around;
 
-            button {
+            &__btn {
                 padding: .5rem;
                 background-color: #08A6E4;
                 color: white;
@@ -27,7 +27,7 @@
                 cursor: pointer;
             }
 
-            p {
+            &__text {
                 padding: .5rem;
                 font-family: 'Open Sans', sans-serif;
             }
