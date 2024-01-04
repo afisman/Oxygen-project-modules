@@ -12,31 +12,31 @@
 </head>
 
 <body>
-    <div class="modal-container" id="modal_container">
-        <div class="modal-div">
-            <h2 class="h2-modal">Subscribe to our newsletter</h2>
-            <button class="close-modal-btn" id="close_modal_btn">X</button>
-            <form action="" method="POST" class="modal-form" id="modal_form">
-                <input type="email" placeholder="Email" id="input_modal" class="input-modal">
-                <input type="submit" class="input-modal-submit" id="input_modal_submit">
+    <div class="modal" id="modal_container">
+        <div class="modal__container">
+            <h2 class="modal__container__title">Subscribe to our newsletter</h2>
+            <button class="modal__container__btn" id="close_modal_btn">X</button>
+            <form action="" method="POST" class="modal__container__form" id="modal_form">
+                <input type="email" placeholder="Email" id="input_modal" class="modal__container__form__input">
+                <input type="submit" class="modal__container__form__submit" id="input_modal_submit">
             </form>
         </div>
     </div>
 
-    <header>
+    <header class="header">
         <div class="nav">
-            <div class="nav-item">
-                <h2>OXYGENShop</h2>
+            <div class="nav__item">
+                <h2 class="nav__item__title">OXYGENShop</h2>
             </div>
-            <div class="nav-item">
+            <div class="nav__item">
                 <div id="hamburguer_menu" class="hamburger-menu">
                     <button id="hamburger_button" class="hamburger-button"> ☰ </button>
                 </div>
-                <div id="nav_links" class="nav-links">
-                    <a href="#info">Why us</a>
-                    <a href="#benefits">Benefits</a>
-                    <a href="#pricing">Prices</a>
-                    <a href="#anyQuestions">Contact</a>
+                <div id="nav_links" class="nav__item__links">
+                    <a href="#info" class="nav__item__links__link">Why us</a>
+                    <a href="#benefits" class="nav__item__links__link">Benefits</a>
+                    <a href="#pricing" class="nav__item__links__link">Prices</a>
+                    <a href="#anyQuestions" class="nav__item__links__link">Contact</a>
                 </div>
             </div>
 
@@ -52,17 +52,19 @@
 
 
     <main>
-        <section class="sell">
-            <h1>Sell More!</h1>
-            <p>Open shop on our platform and increase your sales</p>
-            <button>Open your shop</button>
+        <section class="sell-section">
+            <div class="sell">
+                <h1 class="sell__title">Sell More!</h1>
+                <p class="sell__text">Open shop on our platform and increase your sales</p>
+                <button class="sell__btn">Open your shop</button>
+            </div>
         </section>
 
         <section class="bg-img">
             <img src="./img/Background-1.png" alt="background">
         </section>
 
-        <section class="info" id="info">
+        <section class="info-section" id="info">
             <h2>The most popular sales platform in country</h2>
 
             <div class="columns">
@@ -98,7 +100,7 @@
             </div>
         </section>
 
-        <section class="description" id="benefits">
+        <section class="description-section" id="benefits">
             <div class="description-list">
                 <div class="description-card mac">
 
@@ -163,100 +165,87 @@
         </section>
 
         <section class="pricing-section" id="pricing">
-            <h2>Pricing</h2>
-
-            <select name="currency" id="change_currency" class="change-currency">
+            <h2>Pricing</h2><select name="currency" id="change_currency" class="change-currency">
                 <Option value="eur">EUR</Option>
                 <Option value="usd">USD</Option>
                 <Option value="gbp">GBP</Option>
             </select>
-
             <div class="prices">
-                <article class="basic">
-                    <div class="article-info">
-                        <h2 class="article-title">Basic</h2>
-                        <h3 class="article-price" id="price_basic">€0</h3>
+                <article class="article basic">
+                    <div class="article__info">
+                        <h2 class="article__info__title">Basic</h2>
+                        <h3 class="article__info__price" id="price_basic">€0</h3>
                     </div>
-                    <ul class="article-list">
-                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
-                            <p class="article-list-p">100 MB HDD</p>
+                    <ul class="article__list">
+                        <li class="article__list__item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article__list__item__p">100 MB HDD</p>
                         </li>
-                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
-                            <p class="article-list-p">1 Subdomain</p>
+                        <li class="article__list__item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article__list__item__p">1 Subdomain</p>
                         </li>
-                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
-                            <p class="article-list-p">2 E-mails</p>
+                        <li class="article__list__item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article__list__item__p">2 E-mails</p>
                         </li>
-                        <li class="article-list-item"><img src="./img/Cross.svg" alt="checkbox">
-                            <p class="article-list-p">Two years license</p>
+                        <li class="article__list__item"><img src="./img/Cross.svg" alt="checkbox">
+                            <p class="article__list__item__p">Two years license</p>
                         </li>
-                        <li class="article-list-item"><img src="./img/Cross.svg" alt="checkbox">
-                            <p class="article-list-p">Full Support</p>
+                        <li class="article__list__item"><img src="./img/Cross.svg" alt="checkbox">
+                            <p class="article__list__item__p">Full Support</p>
                         </li>
                     </ul>
-                    <div class="button2">
-                        <button class="button-inner btn-red">Begin</button>
-                    </div>
+                    <div class="button2"><button class="button-inner btn-red">Begin</button></div>
                 </article>
-                <article class="professional">
-                    <div class="article-info">
-                        <h2 class="article-title">Professional</h2>
-                        <h3 class="article-price" id="price_pro">€25</h3>
-                        <p class="limited-offer">Limited offer</p>
+                <article class="article professional">
+                    <div class="article__info">
+                        <h2 class="article__info__title">Professional</h2>
+                        <h3 class="article__info__price" id="price_pro">€25</h3>
+                        <p class="article__info__limited">Limited offer</p>
                     </div>
-                    <ul class="article-list">
-                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
-                            <p class="article-list-p">500 MB HDD</p>
+                    <ul class="article__list">
+                        <li class="article__list__item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article__list__item__p">500 MB HDD</p>
                         </li>
-                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
-                            <p class="article-list-p">2 Subdomains</p>
+                        <li class="article__list__item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article__list__item__p">2 Subdomains</p>
                         </li>
-                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
-                            <p class="article-list-p">5 E-mails</p>
+                        <li class="article__list__item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article__list__item__p">5 E-mails</p>
                         </li>
-                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
-                            <p class="article-list-p">One year license</p>
+                        <li class="article__list__item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article__list__item__p">One year license</p>
                         </li>
-                        <li class="article-list-item"><img src="./img/Cross.svg" alt="checkbox">
-                            <p class="article-list-p">Full Support</p>
+                        <li class="article__list__item"><img src="./img/Cross.svg" alt="checkbox">
+                            <p class="article__list__item__p">Full Support</p>
                         </li>
                     </ul>
-                    <div class="button2">
-                        <button class="button-inner btn-blue">Begin</button>
-                    </div>
+                    <div class="button2"><button class="button-inner btn-blue">Begin</button></div>
                 </article>
-                <diarticlev class="premium">
-
-                    <div class="article-info">
-                        <h2 class="article-title">Premium</h2>
-                        <h3 class="article-price" id="price_premium">$60</h3>
-                        <p class="limited-offer">Limited offer</p>
+                <diarticlev class="article premium">
+                    <div class="article__info">
+                        <h2 class="article__info__title">Premium</h2>
+                        <h3 class="article__info__price" id="price_premium">$60</h3>
+                        <p class="article__info__limited">Limited offer</p>
                     </div>
-                    <ul class="article-list">
-                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
-                            <p class="article-list-p">2 GB HDD</p>
+                    <ul class="article__list">
+                        <li class="article__list__item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article__list__item__p">2 GB HDD</p>
                         </li>
-                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
-                            <p class="article-list-p">5 Subdomains</p>
+                        <li class="article__list__item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article__list__item__p">5 Subdomains</p>
                         </li>
-                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
-                            <p class="article-list-p">20 E-mails</p>
+                        <li class="article__list__item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article__list__item__p">20 E-mails</p>
                         </li>
-                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
-                            <p class="article-list-p">Two years license</p>
+                        <li class="article__list__item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article__list__item__p">Two years license</p>
                         </li>
-                        <li class="article-list-item"><img src="./img/Checkbox-green.svg" alt="checkbox">
-                            <p class="article-list-p">Full Support</p>
+                        <li class="article__list__item"><img src="./img/Checkbox-green.svg" alt="checkbox">
+                            <p class="article__list__item__p">Full Support</p>
                         </li>
                     </ul>
-                    <div class="button2">
-                        <button class="button-inner btn-green">Begin</button>
-                    </div>
+                    <div class="button2"><button class="button-inner btn-green">Begin</button></div>
                     </article>
-
             </div>
-
-
         </section>
 
         <section class="slider-section">
@@ -272,7 +261,7 @@
             </div>
         </section>
 
-        <section class="anyQuestions" id="anyQuestions">
+        <section class="anyQuestions-section" id="anyQuestions">
             <div class="anyQuestions-left">
 
                 <h2>Any questions?</h2>

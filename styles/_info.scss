@@ -1,0 +1,115 @@
+.info-section {
+
+    margin: 1rem;
+    padding: 2rem;
+
+    h2 {
+        font-size: 2.1rem;
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.16;
+        font-family: Raleway, sans-serif;
+    }
+
+
+    .columns {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: Raleway, sans-serif;
+            margin-bottom: 1.5rem;
+
+            .column-child:before {
+                position: absolute;
+                content: "";
+                width: 4.2rem;
+                height: 4.2rem;
+                border-radius: 50%;
+            }
+
+
+            .column-child.red:before {
+                background-color: #fb3b64;
+            }
+
+            .column-child.blue:before {
+                background-color: #08a6e4;
+            }
+
+            .column-child.green:before {
+                background-color: #55dfb4;
+            }
+
+
+
+            img {
+                width: 3.7rem;
+                height: 3.7rem;
+                transform: translateX(50%);
+                vertical-align: middle;
+
+            }
+
+            .column-text-number {
+                letter-spacing: 5.96px;
+                line-height: 1.2;
+                font-weight: 800;
+                margin: 1em 0;
+                font-size: 1.5rem;
+
+            }
+
+
+
+            .column-text-gray {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.3rem;
+                line-height: 1.2;
+                color: #a5a5a5;
+                font-weight: 400;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (min-device-width:1124px) {
+    .info-section {
+        margin-bottom: 10rem;
+        padding: 1.5em;
+
+        h2 {
+            font-size: 2.5rem;
+            line-height: 1.3;
+            margin-bottom: 5rem;
+        }
+
+        .columns {
+            flex-direction: row;
+            margin: 0 auto;
+            width: 60%;
+
+            .column {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+@media screen and (min-device-width:1600px) {
+    .info-section {
+        .columns {
+            width: 50%;
+        }
+    }
+}

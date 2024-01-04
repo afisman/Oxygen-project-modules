@@ -1,0 +1,65 @@
+.sell-section {
+
+    .sell {
+        margin: 5rem 1rem 1rem 1rem;
+        padding: 2rem;
+        text-align: center;
+
+        &__title {
+            text-align: center;
+            font-family: Raleway, sans-serif;
+            font-size: 2.4rem;
+            line-height: 1.2;
+            margin-top: 1.5rem;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        &__text {
+            text-align: center;
+            font-weight: 400;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.4;
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+        }
+
+        &__btn {
+            background-color: #08A6E4;
+            color: white;
+            border-radius: 3rem;
+            width: 15rem;
+            padding: 1.2rem 0;
+            font-size: 1.2rem;
+            line-height: 1.4;
+            font-weight: 700;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+            }
+        }
+
+    }
+}
+
+@media screen and (min-device-width:1124px) {
+
+    .sell-section {
+        .sell {
+            &__title {
+                margin-top: 3rem;
+            }
+
+            &__text {
+                margin: 1.5rem;
+            }
+
+            &__btn {
+                margin: 1.5rem;
+            }
+        }
+    }
+}
