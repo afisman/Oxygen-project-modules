@@ -918,36 +918,36 @@
   box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.2);
   margin-top: 4rem;
 }
-.footer .footer-left {
+.footer__left {
   display: inline-block;
   padding: 1.2em 0 1.2em 2em;
   margin: 0 auto;
 }
-.footer .footer-left h5 {
+.footer__left__title {
   font-size: 2rem;
   font-weight: 300;
   font-family: Raleway, sans-serif;
   line-height: 1.2;
   color: #08A6E4;
 }
-.footer .footer-left p {
+.footer__left__text {
   font-size: 0.7rem;
   line-height: 1.3;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   color: #A5A5A5;
 }
-.footer .footer-right {
+.footer__right {
   display: inline-block;
   position: absolute;
   right: 0;
   margin: 1.4em 2em;
 }
-.footer .footer-right .footer-icon {
+.footer__right__icon {
   display: inline-block;
   margin: 0.7rem;
 }
-.footer .footer-right .footer-icon img:hover {
+.footer__right__icon img:hover {
   cursor: pointer;
 }
 
