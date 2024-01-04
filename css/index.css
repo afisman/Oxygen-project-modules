@@ -951,13 +951,13 @@
   cursor: pointer;
 }
 
-.return-span-btn {
+.return {
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 1em 2em;
 }
-.return-span-btn .return-btn {
+.return__btn {
   padding: 2em;
   background-color: #08A6E4;
   color: white;
@@ -969,7 +969,7 @@
   font-size: 1rem;
   width: 15rem;
 }
-.return-span-btn .return-btn:hover {
+.return__btn:hover {
   transform: scale(1.01);
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
   line-height: 1.3;
