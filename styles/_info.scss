@@ -3,7 +3,7 @@
     margin: 1rem;
     padding: 2rem;
 
-    h2 {
+    &__title {
         font-size: 2.1rem;
         font-weight: 300;
         text-align: center;
@@ -28,7 +28,7 @@
             font-family: Raleway, sans-serif;
             margin-bottom: 1.5rem;
 
-            .column-child:before {
+            &__child:before {
                 position: absolute;
                 content: "";
                 width: 4.2rem;
@@ -37,21 +37,21 @@
             }
 
 
-            .column-child.red:before {
+            &__child.red:before {
                 background-color: #fb3b64;
             }
 
-            .column-child.blue:before {
+            &__child.blue:before {
                 background-color: #08a6e4;
             }
 
-            .column-child.green:before {
+            &__child.green:before {
                 background-color: #55dfb4;
             }
 
 
 
-            img {
+            &__child__icon {
                 width: 3.7rem;
                 height: 3.7rem;
                 transform: translateX(50%);
@@ -59,25 +59,23 @@
 
             }
 
-            .column-text-number {
-                letter-spacing: 5.96px;
-                line-height: 1.2;
-                font-weight: 800;
-                margin: 1em 0;
-                font-size: 1.5rem;
+            &__text {
+                &--number {
+                    letter-spacing: 5.96px;
+                    line-height: 1.2;
+                    font-weight: 800;
+                    margin: 1em 0;
+                    font-size: 1.5rem;
+                }
 
+                &--gray {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 1.3rem;
+                    line-height: 1.2;
+                    color: #a5a5a5;
+                    font-weight: 400;
+                }
             }
-
-
-
-            .column-text-gray {
-                font-family: 'Open Sans', sans-serif;
-                font-size: 1.3rem;
-                line-height: 1.2;
-                color: #a5a5a5;
-                font-weight: 400;
-            }
-
         }
     }
 
@@ -88,7 +86,7 @@
         margin-bottom: 10rem;
         padding: 1.5em;
 
-        h2 {
+        &__title {
             font-size: 2.5rem;
             line-height: 1.3;
             margin-bottom: 5rem;

@@ -240,7 +240,7 @@
   margin: 1rem;
   padding: 2rem;
 }
-.info-section h2 {
+.info-section__title {
   font-size: 2.1rem;
   font-weight: 300;
   text-align: center;
@@ -263,36 +263,36 @@
   font-family: Raleway, sans-serif;
   margin-bottom: 1.5rem;
 }
-.info-section .columns .column .column-child:before {
+.info-section .columns .column__child:before {
   position: absolute;
   content: "";
   width: 4.2rem;
   height: 4.2rem;
   border-radius: 50%;
 }
-.info-section .columns .column .column-child.red:before {
+.info-section .columns .column__child.red:before {
   background-color: #fb3b64;
 }
-.info-section .columns .column .column-child.blue:before {
+.info-section .columns .column__child.blue:before {
   background-color: #08a6e4;
 }
-.info-section .columns .column .column-child.green:before {
+.info-section .columns .column__child.green:before {
   background-color: #55dfb4;
 }
-.info-section .columns .column img {
+.info-section .columns .column__child__icon {
   width: 3.7rem;
   height: 3.7rem;
   transform: translateX(50%);
   vertical-align: middle;
 }
-.info-section .columns .column .column-text-number {
+.info-section .columns .column__text--number {
   letter-spacing: 5.96px;
   line-height: 1.2;
   font-weight: 800;
   margin: 1em 0;
   font-size: 1.5rem;
 }
-.info-section .columns .column .column-text-gray {
+.info-section .columns .column__text--gray {
   font-family: "Open Sans", sans-serif;
   font-size: 1.3rem;
   line-height: 1.2;
@@ -305,7 +305,7 @@
     margin-bottom: 10rem;
     padding: 1.5em;
   }
-  .info-section h2 {
+  .info-section__title {
     font-size: 2.5rem;
     line-height: 1.3;
     margin-bottom: 5rem;
