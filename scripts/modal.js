@@ -86,7 +86,7 @@ input_modal_submit.addEventListener('click', (e) => {
     }
 
     if (!emailRegex.test(email)) {
-        input_modal.style.borderColor = '#eb476e';
+        input_modal.classList.add('modal-input-error');
         emailValid = false;
         alert('Fill with a correct email address')
     } else {
@@ -98,7 +98,7 @@ input_modal_submit.addEventListener('click', (e) => {
         sendInput("https://jsonplaceholder.typicode.com/posts", input_modal);
         modalOpen()
     } else {
-        input_modal.style.border = '1px solid #eb476e'
+        input_modal.classList.add('modal-input-error')
     }
 
 })

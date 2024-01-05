@@ -48,6 +48,10 @@
             flex-direction: column;
             align-items: center;
 
+            .modal-input-error {
+                border: 1px solid #eb476e;
+            }
+
             &__input {
                 width: 100%;
                 border: none;
