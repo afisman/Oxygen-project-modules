@@ -10,10 +10,6 @@ const changeCurrency = async (currency) => {
     try {
         const res = await fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json', {
             method: "GET",
-            params: {
-                api: "TRUE",
-                data_type: 1,
-            },
         });
 
         if (res.status === 200) {

@@ -69,9 +69,6 @@ input_modal_submit.addEventListener('click', (e) => {
         try {
             const sendData = fetch(url, {
                 method: 'POST',
-                headers: {
-                    'Content-type': 'application/json; charset=UTF-8',
-                },
                 body: JSON.stringify(data),
             })
                 .then((res) => {
