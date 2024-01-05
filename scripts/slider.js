@@ -15,7 +15,7 @@ class Slider {
     showImage(index) {
         this.img.forEach((image, i) => {
             if (i === index) {
-                this.caption.innerHTML = image.alt;
+                this.caption.innerText = image.alt;
                 image.style.display = "block";
             } else {
                 image.style.display = "none";

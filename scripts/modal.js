@@ -5,7 +5,6 @@ const close_modal_btn = document.getElementById('close_modal_btn');
 const input_modal_submit = document.getElementById('input_modal_submit');
 
 
-// localStorage.clear()
 const modalOpen = () => {
     localStorage.setItem('modalOpen', 'true')
 }

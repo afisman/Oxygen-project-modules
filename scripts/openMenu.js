@@ -7,11 +7,11 @@ let activate = false;
 hamburguer_menu.addEventListener("click", () => {
     if (activate === false) {
         nav_links.style.display = "block";
-        hamburger_button.innerHTML = "X";
+        hamburger_button.innerText = "X";
         activate = true;
     } else {
         nav_links.style.display = "none";
-        hamburger_button.innerHTML = "☰";
+        hamburger_button.innerText = "☰";
         activate = false;
     }
 });

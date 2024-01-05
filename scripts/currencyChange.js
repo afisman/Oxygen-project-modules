@@ -43,18 +43,18 @@ currency_select.addEventListener('change', async () => {
     let premPrice = (changedCurrency * 60).toFixed(1);
 
     if (currency_select.value == 'usd') {
-        price_basic.innerHTML = '$0';
-        price_pro.innerHTML = `$${proPrice}`;
-        price_premium.innerHTML = `$${premPrice}`;
+        price_basic.innerText = '$0';
+        price_pro.innerText = `$${proPrice}`;
+        price_premium.innerText = `$${premPrice}`;
     } else if (currency_select.value == 'gbp') {
 
-        price_basic.innerHTML = '£0';
-        price_pro.innerHTML = `£${proPrice}`;
-        price_premium.innerHTML = `£${premPrice}`;
+        price_basic.innerText = '£0';
+        price_pro.innerText = `£${proPrice}`;
+        price_premium.innerText = `£${premPrice}`;
     } else {
-        price_basic.innerHTML = '€0';
-        price_pro.innerHTML = '€25';
-        price_premium.innerHTML = '€60';
+        price_basic.innerText = '€0';
+        price_pro.innerText = '€25';
+        price_premium.innerText = '€60';
     }
 
 })
