@@ -6,10 +6,10 @@ const users = [];
 
 const validate = (regex, input, isValid) => {
     if (regex.test(input.value)) {
-        input.style.borderBottom = '1px solid black'
+        input.classList.remove('input-error')
         isValid = true;
     } else {
-        input.style.borderBottom = '2px solid #eb476e'
+        input.classList.add('input-error')
         isValid = false;
     }
 
@@ -28,7 +28,7 @@ form_btn_submit.addEventListener('click', (e) => {
     validName = validate(nameValidation, name, validName)
     validEmail = validate(emailValidation, email, validEmail);
 
-    !consent.checked ? consent.style.outline = '2px solid #eb476e' : consent.style.outline = 'none';
+    !consent.checked ? consent.classList.add('consent-error') : consent.classList.remove('consent-error');
 
     if (validEmail && validName && consent.checked) {
         sendForm("https:jsonplaceholder.typicode.com/posts", { name: name.value, email: email.value })
@@ -36,8 +36,8 @@ form_btn_submit.addEventListener('click', (e) => {
         email.value = '';
         consent.checked = false;
 
-        name.style.borderBottom = '1px solid black';
-        email.style.borderBottom = '1px solid black';
+        name.classList.remove('input-error')
+        email.classList.remove('input-error')
     }
 
 
