@@ -19,9 +19,12 @@
   min-width: 50%;
 }
 .header .nav__item__title {
-  color: #08A6E4;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
+}
+.header .nav__item__title a {
+  text-decoration: none;
+  color: #08A6E4;
 }
 .header .nav__item__links {
   display: none;

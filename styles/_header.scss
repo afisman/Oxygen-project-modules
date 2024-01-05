@@ -19,9 +19,13 @@
             min-width: 50%;
 
             &__title {
-                color: #08A6E4;
                 margin: 0 auto;
                 font-family: Raleway, sans-serif;
+
+                a {
+                    text-decoration: none;
+                    color: #08A6E4;
+                }
             }
 
             &__links {
