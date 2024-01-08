@@ -1,14 +1,14 @@
-@import "styles/header";
-@import "styles/modal";
-@import "styles/sell";
-@import "styles/bgImg";
-@import "styles/info";
-@import "styles/pricing";
-@import "styles/description";
-@import "styles/anyQuestions";
-@import "styles/slider";
-@import "styles/footer";
-@import "styles/returnBtn";
+@use "styles/header";
+@use "styles/modal";
+@use "styles/sell";
+@use "styles/bgImg";
+@use "styles/info";
+@use "styles/pricing";
+@use "styles/description";
+@use "styles/anyQuestions";
+@use "styles/slider";
+@use "styles/footer";
+@use "styles/returnBtn";
 
 * {
     box-sizing: border-box;
