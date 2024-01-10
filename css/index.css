@@ -969,12 +969,12 @@
 
 .return {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 1em 2em;
+  margin: 0 auto;
+  text-align: end;
+  padding: 0.5em 1em;
 }
 .return__btn {
-  padding: 2em;
+  padding: 1em;
   background-color: #08A6E4;
   color: white;
   border: none;
