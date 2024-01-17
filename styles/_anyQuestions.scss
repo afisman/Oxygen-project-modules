@@ -52,6 +52,7 @@
         &__div {
             display: block;
             margin-top: 1.5rem;
+            width: 100%;
 
             &__label {
                 display: block;
@@ -105,7 +106,7 @@
                 width: 20em;
                 text-align: left;
                 overflow-wrap: break-word;
-                overflow: scroll;
+                // overflow: scroll;
             }
         }
 
@@ -191,6 +192,6 @@
 
 @media screen and (min-device-width:1600px) {
     .anyQuestions-section {
-        width: 40%;
+        width: 50%;
     }
 }

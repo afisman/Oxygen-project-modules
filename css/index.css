@@ -777,6 +777,7 @@
 .anyQuestions-section .form__div {
   display: block;
   margin-top: 1.5rem;
+  width: 100%;
 }
 .anyQuestions-section .form__div__label {
   display: block;
@@ -819,7 +820,6 @@
   width: 20em;
   text-align: left;
   overflow-wrap: break-word;
-  overflow: scroll;
 }
 .anyQuestions-section .form__btn {
   text-align: right;
@@ -888,7 +888,7 @@
 }
 @media screen and (min-device-width: 1600px) {
   .anyQuestions-section {
-    width: 40%;
+    width: 50%;
   }
 }
 .slider-section {
