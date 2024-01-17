@@ -62,7 +62,6 @@
                 letter-spacing: .2rem;
                 color: #08A6E4;
                 text-transform: uppercase;
-                overflow-wrap: break-word;
             }
 
             input {
@@ -104,6 +103,7 @@
                 white-space: wrap;
                 width: 90%;
                 text-align: justify;
+                overflow-wrap: break-word;
             }
         }
 
