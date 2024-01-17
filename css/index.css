@@ -823,6 +823,7 @@
   white-space: wrap;
   text-align: left;
   overflow-wrap: break-word;
+  overflow: hidden;
 }
 .anyQuestions-section .form__btn {
   text-align: right;
