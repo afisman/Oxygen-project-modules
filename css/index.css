@@ -799,22 +799,17 @@
   border-bottom: 2px solid #eb476e;
 }
 .anyQuestions-section .form__checkbox {
-  position: relative;
-  display: inline-block;
-  white-space: nowrap;
+  display: flex;
 }
 .anyQuestions-section .form__checkbox input {
-  display: inline-block;
-  position: absolute;
   top: 0;
   width: 1.6rem;
   height: 1.6rem;
 }
 .anyQuestions-section .form__checkbox__label {
-  position: relative;
+  padding-left: 0.5rem;
   top: 0;
   left: 2rem;
-  display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
@@ -824,7 +819,7 @@
   width: 20em;
   text-align: left;
   overflow-wrap: break-word;
-  overflow: auto;
+  overflow: scroll;
 }
 .anyQuestions-section .form__btn {
   text-align: right;
