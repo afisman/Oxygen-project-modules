@@ -822,7 +822,7 @@
   color: #707070;
   white-space: wrap;
   text-align: left;
-  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .anyQuestions-section .form__btn {
   text-align: right;
