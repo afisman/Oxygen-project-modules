@@ -821,8 +821,8 @@
   line-height: 1.4;
   color: #707070;
   white-space: wrap;
-  width: 90%;
-  text-align: justify;
+  text-align: left;
+  word-wrap: break-word;
 }
 .anyQuestions-section .form__btn {
   text-align: right;
