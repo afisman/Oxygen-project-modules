@@ -824,6 +824,7 @@
   width: 20em;
   text-align: left;
   overflow-wrap: break-word;
+  overflow: auto;
 }
 .anyQuestions-section .form__btn {
   text-align: right;
