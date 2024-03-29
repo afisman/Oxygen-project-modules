@@ -8,7 +8,7 @@ const changeCurrency = async (currency) => {
     let value
 
     try {
-        const res = await fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json', {
+        const res = await fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur.json', {
             method: "GET",
         });
 
