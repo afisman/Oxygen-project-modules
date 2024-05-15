@@ -127,16 +127,20 @@
                 margin-left: auto;
                 justify-content: space-around;
                 box-shadow: none;
+                flex-direction: row;
+                height: auto;
 
                 &__link {
-                    &:hover {
-                        border-bottom: 3px solid #08A6E4;
-                    }
+                    color: #A5A5A5;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 700;
+
+                    // &:focus {
+                    //     border-bottom: 3px solid #08A6E4;
+                    // }
                 }
 
             }
-
-
         }
 
         .scroll {
