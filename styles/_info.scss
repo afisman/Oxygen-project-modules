@@ -81,7 +81,7 @@
 
 }
 
-@media screen and (min-device-width:1124px) {
+@media screen and (min-width:1124px) {
     .info-section {
         margin-bottom: 10rem;
         padding: 1.5em;
@@ -104,7 +104,7 @@
     }
 }
 
-@media screen and (min-device-width:1600px) {
+@media screen and (min-width:1600px) {
     .info-section {
         .columns {
             width: 50%;
